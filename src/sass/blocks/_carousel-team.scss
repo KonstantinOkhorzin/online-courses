@@ -1,0 +1,82 @@
+.carousel-team {
+    position: relative;
+    &__title {
+        margin-top: 8px;
+    }
+    &__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 285px);
+        grid-template-rows: minmax(416px, auto);
+        column-gap: 30px;
+        grid-auto-flow: column;
+    }
+    &__img {
+        width: 285px;
+        height: 340px;
+        position: relative;
+        background-color: #FFCF2D;;
+        border-radius: 4px;
+        padding: 20px 20px 0 20px;
+        @include img_cover;
+    }
+    &__hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 285px;
+        height: 340px;
+        background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+        border-radius: 4px;
+        padding: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        transition: all .3s;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__icons {
+        width: 84px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            svg path {
+                fill: #fff;
+                transition: all .3s;
+            }
+        }
+        
+    }
+    &__name {
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #424551;
+    }
+    &__position {
+        margin-top: 4px;
+        line-height: 160%;
+        text-align: center;
+        color: #787A80;
+    }
+    &__controls {
+        position: absolute;
+        right: -12px;
+        top: 56px;
+        width: 96px;
+        height: 48px;
+        display: flex;
+    }
+}

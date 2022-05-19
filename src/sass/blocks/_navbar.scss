@@ -1,0 +1,125 @@
+.navbar {
+    height: 52px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        position: relative;
+        z-index: 5;
+    }
+    &__menu {
+        width: 880px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px 30px 30px 30px;
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+            &_active {
+                left: 0;
+            }
+        }
+    }
+    &__list {
+        width: 470px;
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    &__link {
+        display: block;
+        font-weight: 700;
+        color: #424551;
+        padding: 18px 20px;
+        &:hover {
+            color: $red-color;
+            transition: all .3s;
+        }
+        &_active {
+            color: $red-color;
+        }
+    }
+    &__account {
+        display: flex;
+        justify-content: space-between;
+        width: 144px;
+        font-weight: 700;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__log-in {
+        display: flex;
+        align-items: center;
+        span {
+            display: block;
+            font-weight: 700;
+            line-height: 160%;
+            color: #424551;
+            margin-left: 8px;
+        }
+    }
+    &__register {
+            display: block;
+            font-weight: 700;
+            line-height: 160%;
+            color: #424551;
+    }
+    &__burger {
+        display: none;
+        @media (max-width: 768px) {
+            z-index: 5;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 18px;
+            cursor: pointer;
+            span,
+            &:before,
+            &:after {
+                left: 0;
+                position: absolute;
+                height: 10%;
+                width: 100%;
+                transition: all 0.3s;
+                background-color: #fff;
+            }
+            span {
+                top: 50%;
+                transform: scale(1) translateY(-50%);
+            }
+            &:before {
+                content: '';
+                top: 0;
+            }
+            &:after {
+                content: '';
+                bottom: 0;
+            }
+            &_active {
+                span {
+                    transform: scale(0) translateY(-50%);
+                }
+                &:before {
+                    top: 50%;
+                    transform: rotate(-45deg) translate(0px, -50%); 
+                }
+                &:after {
+                    bottom: 50%;
+                    transform: rotate(45deg) translate(0px, 50%);
+                }
+            }
+        }
+    }
+}
+
+
+
+

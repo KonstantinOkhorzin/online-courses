@@ -1,0 +1,28 @@
+.subscribe {
+    padding: 120px 0 180px;
+    background: url(../../img/subscribe__bg.jpg) center center / cover no-repeat;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        width: 810px;
+        margin-top: 8px;
+        text-align: center;
+    }
+    &__form {
+        margin-top: 60px;
+    }
+    &__input {
+        width: 422px;
+        height: 52px;
+        background: #FFFFFF;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        margin-right: 24px;
+        line-height: 160%;
+        color: #9A9CA5;
+        padding: 13px 16px;
+    }
+}

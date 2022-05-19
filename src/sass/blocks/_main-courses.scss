@@ -1,0 +1,17 @@
+.main-courses {
+    margin-top: 180px;
+    &__heading {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 600px));
+        grid-template-rows: minmax(214px, auto);
+        grid-auto-rows: minmax(214px, auto);
+        gap: 30px;
+    }
+}

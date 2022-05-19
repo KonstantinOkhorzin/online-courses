@@ -1,0 +1,37 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+//убераеться возможность скрола при открытом меню burger
+body._lock {
+    overflow: hidden;
+}
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/navbar';
+@import 'blocks/main-promo';
+@import 'blocks/main-about';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/btns';
+@import 'blocks/main-courses';
+@import 'blocks/card';
+@import 'blocks/main-benefits';
+@import 'blocks/main-events';
+@import 'blocks/main-certificate';
+@import 'blocks/certificate';
+@import 'blocks/main-carousel-block';
+@import 'blocks/carousel-team';
+@import 'blocks/carousel-reviows';
+@import 'blocks/carousel__btns';
+@import 'blocks/main-blog';
+@import 'blocks/main-subscribe';
+@import 'blocks/subscribe';
+@import 'blocks/footer';
+

@@ -1,0 +1,64 @@
+.main-benefits {
+    margin-top: 180px;
+    &__subtitle {
+        text-align: center;
+    }
+    &__title {
+        margin-top: 8px;
+        text-align: center;
+    }
+    &__tabs {
+        margin: 60px auto 0;
+        width: 1228px;
+        height: 46px;
+        display: flex;
+    }
+    &__tab {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9A9CA5;
+        cursor: pointer;
+        &-icon {
+            margin-right: 8px;
+        }
+        &-service {
+            font-weight: 700;
+            line-height: 160%;
+        }
+        &_active {
+            border: 1px solid $red-color;
+            border-radius: 4px;
+            color: $red-color;
+            svg path {
+                fill: $red-color;
+            }
+        }
+    }
+    &__tab-content {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 495px 600px;
+        column-gap: 135px;
+    }
+    &__tab-img {
+        width: 600px;
+        height: 440px;
+        @include img_cover;
+    }
+    &__tab-title {
+        margin-top: 122px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        color: #1E212C;
+    }
+    &__tab-text {
+        margin-top: 24px;
+        line-height: 160%;
+        color: #424551;
+    }
+        
+
+}

@@ -1,0 +1,80 @@
+.main-promo {
+    background: url('../img/main-promo__bg.jpg') center center / cover no-repeat;
+    padding: 20px 0 80px;
+    &__content {
+        margin-top: 128px;
+        display: grid;
+        grid-template-columns: 496px 602px;
+        column-gap: 132px;
+    }
+    &__play-video {
+        display: block;
+        position: relative;
+        margin: 12px 0 0 -16px;
+        width: 84px;
+        height: 84px;
+        border-radius: 100%;
+        padding: 16px;
+        transition: all .3s;
+        &:after {
+            content: 'Play showreel';
+            width: 88px;
+            display: block;
+            position: absolute;
+            top: 35px;
+            right: -88px;
+            color: #1E212C;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        &:hover {
+            background-color: #FEC9C1;
+        }
+    }
+    &__title {
+        margin-top: 24px;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 130%;
+        color: #1E212C;
+    }
+    &__btns {
+        margin-top: 60px;
+        width: 372px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        position: relative;
+    }
+    &__illustration {
+        position: absolute;
+        top: 0;
+        left: 49px;
+        width: 602px;
+        height: 551px;
+        @include img_cover;
+    }
+    &__statistics {
+        margin-top: 189px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__statistics-item {
+        display: flex;
+        align-items: center;
+    }
+    &__statistics-ellipse {
+        width: 8px;
+        height: 8px;
+        background: $red-color;
+        border-radius: 100%;
+    }
+    &__statistics-count {
+        margin-right: 12px;
+        font-weight: 900;
+        font-size: 46px;
+    }
+}

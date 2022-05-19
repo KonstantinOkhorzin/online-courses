@@ -1,0 +1,33 @@
+.certificate {
+    display: grid;
+    grid-template-columns: 395px 704px;
+    justify-content: space-between;
+    &__subtitle {
+        margin-top: 83px;
+    }
+    &__title {
+        margin-top: 8px;
+    }
+    &__text {
+        margin-top: 48px;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__logos {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 105px);
+        grid-template-rows: 50px;
+        column-gap: 40px;
+    }
+    &__logo {
+        width: 105px;
+        height: 50px;
+        @include img_cover;
+    }
+    &__img {
+        width: 704px;
+        height: 500px;
+        @include img_cover;
+    }
+}
