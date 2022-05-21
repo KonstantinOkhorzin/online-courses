@@ -1,11 +1,4 @@
-.main-blog {
-    margin-top: 120px;
-    &__heading {
-        margin-top: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+.blog {
     &__list {
         margin-top: 60px;
         display: grid;

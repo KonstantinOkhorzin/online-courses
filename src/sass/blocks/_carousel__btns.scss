@@ -1,4 +1,9 @@
 .carousel {
+    &__controls {
+        width: 96px;
+        height: 48px;
+        display: flex;
+    }
     &__prev-btn,
     &__next-btn {
         width: 48px;

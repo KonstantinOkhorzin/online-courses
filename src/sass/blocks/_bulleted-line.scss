@@ -1,0 +1,17 @@
+.bulleted-line {
+    position: relative;
+    display: block;
+    line-height: 160%;
+    color: #424551;
+    padding-left: 32px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url('../icons/main-about__check.svg') center center / cover no-repeat;
+    }
+}

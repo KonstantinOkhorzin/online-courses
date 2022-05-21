@@ -1,4 +1,4 @@
-.main-about {
+.main-page-about {
     margin-top: 180px;
     background: url('../img/main-about__bg.png') bottom center / contain no-repeat;
     &__container {
@@ -15,30 +15,13 @@
     &__title {
         margin-top: 8px;
     }
-    &__list {
+    &__bulleted-list {
         margin-top: 40px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: minmax(26px, auto);
         grid-auto-rows: minmax(26px, auto);
         row-gap: 12px;
-    }
-    &__list-item {
-        position: relative;
-        display: block;
-        line-height: 160%;
-        color: #424551;
-        padding-left: 32px;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 5px;
-            left: 0;
-            display: block;
-            width: 16px;
-            height: 16px;
-            background: url('../icons/main-about__check.svg') center center / cover no-repeat;
-        }
     }
     &__btn {
         margin-top: 48px;

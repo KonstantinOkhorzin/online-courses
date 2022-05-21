@@ -1,7 +1,9 @@
 .certificate {
-    display: grid;
-    grid-template-columns: 395px 704px;
-    justify-content: space-between;
+    &__container {
+        display: grid;
+        grid-template-columns: 395px 704px;
+        justify-content: space-between;
+    }
     &__subtitle {
         margin-top: 83px;
     }

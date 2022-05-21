@@ -1,35 +1,11 @@
-.main-promo {
+.main-page-header {
     background: url('../img/main-promo__bg.jpg') center center / cover no-repeat;
-    padding: 20px 0 80px;
+    padding-bottom: 80px;
     &__content {
         margin-top: 128px;
         display: grid;
         grid-template-columns: 496px 602px;
         column-gap: 132px;
-    }
-    &__play-video {
-        display: block;
-        position: relative;
-        margin: 12px 0 0 -16px;
-        width: 84px;
-        height: 84px;
-        border-radius: 100%;
-        padding: 16px;
-        transition: all .3s;
-        &:after {
-            content: 'Play showreel';
-            width: 88px;
-            display: block;
-            position: absolute;
-            top: 35px;
-            right: -88px;
-            color: #1E212C;
-            font-weight: 700;
-            font-size: 14px;
-        }
-        &:hover {
-            background-color: #FEC9C1;
-        }
     }
     &__title {
         margin-top: 24px;

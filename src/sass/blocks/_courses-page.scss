@@ -1,0 +1,11 @@
+.courses-page {
+    &__subscribe,
+    &__certificate,
+    &__carousel {
+        margin-top: 120px;
+    }
+    &__carousel {
+        padding: 80px 0 100px;
+        background: url(../img/courses-page__carousel-bg.jpg) center center / cover no-repeat;
+    }
+}
