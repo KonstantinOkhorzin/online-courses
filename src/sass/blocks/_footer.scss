@@ -51,15 +51,20 @@
     &__item {
         display: flex;
         align-items: center;
+        &:hover .footer__link {
+            opacity: 1;
+            transition: all .3s;
+            svg path {
+                fill: #fff;
+            }
+        }
     }
     &__link {
         line-height: 160%;
         color: #FFFFFF;
         opacity: 0.6;
-        &:hover {
-            opacity: 1;
-            transition: all .3s;
-        }
+        display: flex;
+        align-items: center;
     }
     &__phone,
     &__mail {
