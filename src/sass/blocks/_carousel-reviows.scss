@@ -19,11 +19,17 @@
         background: #FFFFFF;
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
         border-radius: 4px;
-        padding: 64px 105px;
-        display: flex;
-    }
-    &__braces {
-        margin-right: 30px;
+        padding: 64px 105px 64px 163px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 64px;
+            left: 105px;
+            display: block;
+            width: 28px;
+            height: 20px;
+            background: url(../icons/braces.svg) center center /cover no-repeat;
+        }
     }
     &__text {
         font-size: 20px;

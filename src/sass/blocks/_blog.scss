@@ -64,20 +64,12 @@
         color: #1E212C;
     }
     &__descr {
+        margin-top: 8px;
         line-height: 160%;
         color: #424551;
     }
-    &__continuation {
+    &__action-link {
         margin-top: 16px;
-        display: flex;
-        align-items: center;
-    }
-    &__action {
-        margin-right: 8px;
-        font-weight: 700;
-        line-height: 160%;
-        color: #1E212C;
-        margin-right: 8px;
     }
     &__badge {
         position: absolute;
