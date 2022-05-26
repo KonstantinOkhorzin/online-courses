@@ -1,0 +1,177 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(#1E212C, 0.75);
+}
+.modal {
+    width: 486px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+    padding: 48px 0 48px;
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        background: inherit;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        text-align: center;
+        color: #1E212C;
+    }
+    &__text {
+        margin-top: 24px;
+        padding: 0 48px;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        color: #787A80;
+    }
+    &__form {
+        margin-top: 19px;
+        padding: 0 48px 29px;
+        border-bottom: 1px solid #E5E8ED;
+    }
+    &__form-item {
+        position: relative;
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__label {
+        font-size: 14px;
+        line-height: 150%;
+        color: #424551;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        height: 44px;
+        margin-top: 8px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 150%;
+        color: #9A9CA5;
+        padding: 11px 40px 12px 16px;
+    }
+    &__eye {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 7px;
+        right: 7px;
+        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            top:14px;
+            right: 3px;
+            width: 24px;
+            height: 2px;
+            background-color: #424551;
+            transform: rotate(45deg);
+            transition: all .3s;
+            opacity: 1;
+        }
+        &_active {
+            &:after {
+                opacity: 0;
+            }
+        } 
+    }
+    &__checbox-label {
+        display: flex;
+        align-items: center;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .modal__custom-checkbox {
+            border: none;
+            background: url(../icons/checbox-checked.svg);
+        }
+        &:focus + .modal__custom-checkbox:before {
+            content: '';
+            position: absolute;
+            top: 2.5px;
+            left: 0px;
+            width: 16px;
+            height: 16px; 
+            border: 2px solid #000;
+            border-radius: 3px;
+        }
+    }
+    &__custom-checkbox {
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+        border: 1px solid #D7DADD;
+    }
+    &__checkbox-messege {
+        font-size: 14px;
+        line-height: 150%;
+        color: #424551;
+        margin-left: 12px;
+    }
+    &__between {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__remind-pass {
+        color: $red-color;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    &__btn {
+        width: 100%;
+        margin-top: 24px;
+    }
+    &__question {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 150%;
+        color: #424551;
+    }
+    &__link {
+        color: $red-color;
+    }
+    &__icons {
+        margin-top: 16px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__icon {
+        margin-right: 12px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            svg path {
+                fill: $red-color;
+                transition: all .3s;
+            }
+        }
+    }
+
+}
