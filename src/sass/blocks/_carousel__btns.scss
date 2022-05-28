@@ -13,7 +13,6 @@
         align-items: center;
         border-radius: 100%;
         transition: all .3s;
-        cursor: pointer;
         &:hover {
             background-color: $red-color;
             svg path {

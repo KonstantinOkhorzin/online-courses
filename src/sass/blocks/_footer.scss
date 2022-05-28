@@ -84,14 +84,16 @@
         line-height: 150%;
         color: #FFFFFF;
         opacity: 0.6;
-        padding: 0 40px 0 12px;
+        padding: 0 50px 0 12px;
     }
     &__btn {
         position: absolute;
         top: 0;
         right: 0;
-        display: block;
-        width: 36px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 40px;
         height: 36px;
         background: rgba(255, 255, 255, 0);
     }

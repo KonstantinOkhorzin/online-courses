@@ -35,6 +35,9 @@ body._lock {
 @import 'blocks/action-link';
 @import 'blocks/pagination';
 @import 'blocks/modal';
+@import 'blocks/courses';
+@import 'blocks/contacts';
+@import 'blocks/checkbox';
 @import 'blocks/main-page';
 @import 'blocks/main-page-header';
 @import 'blocks/main-page-about';
@@ -42,5 +45,6 @@ body._lock {
 @import 'blocks/main-page-benefits';
 @import 'blocks/courses-page';
 @import 'blocks/events-page';
-@import 'blocks/courses';
+@import 'blocks/blog-page.scss';
+
 

@@ -1,10 +1,65 @@
 .blog {
+    &__toolbar {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+    &__tabs {
+        flex-grow: 1;
+        margin-right: 40px;
+        display: flex;
+    }
+    &__tab {
+        padding: 10px 20px;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        line-height: 160%;
+        color: #9A9CA5;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_active {
+            border: 1px solid $red-color;
+            border-radius: 4px;
+            color: $red-color;
+            svg path {
+                fill: $red-color;
+            }
+        }
+    }
+    &__tab-type {
+        margin-left: 8px;
+    }
+    &__category {
+        margin-right: 40px;
+    }
+    &__label {
+        font-weight: 700;
+        line-height: 160%;
+        color: #424551;
+        margin-right: 12px;
+    }
+    &__select {
+        height: 44px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #424551;
+        padding: 11px 16px 12px;
+    }
+    &__search-form {
+        width: 285px;
+    }
     &__list {
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(3, 390px);
         grid-template-rows: minmax(507px, auto);
-        column-gap: 30px;
+        gap: 60px 30px;
     }
     &__item {
         position: relative;
@@ -27,6 +82,7 @@
     &__speciality {
         margin-right: 24px;
         font-weight: 700;
+        color:inherit;
     }
     &__date {
         position: relative;
@@ -86,6 +142,9 @@
         line-height: 150%;
         color: #424551;
         margin-left: 4px;
+    }
+    &__pagination {
+        margin-top: 80px;
     }
 
 }

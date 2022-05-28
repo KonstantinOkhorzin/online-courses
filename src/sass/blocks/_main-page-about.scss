@@ -12,9 +12,6 @@
         height: 560px;
         @include img_cover;
     }
-    &__title {
-        margin-top: 8px;
-    }
     &__bulleted-list {
         margin-top: 40px;
         display: grid;

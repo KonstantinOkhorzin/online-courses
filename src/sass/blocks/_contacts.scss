@@ -1,0 +1,138 @@
+.contacts {
+    margin: 80px 0 180px;
+    &__container {
+        display: grid;
+        grid-template-columns: 420px 705px;
+        grid-template-rows: minmax(444px, auto) minmax(614px, auto);
+        gap: 180px 105px;
+    }
+    &__list {
+        margin-top: 40px;
+        display: grid;
+        grid-template-rows: minmax(48px, auto);
+        grid-auto-rows: minmax(48px, auto);
+        row-gap: 24px;
+    }
+    &__item {
+        padding-left: 36px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0; 
+            left: 0;
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__email:before {
+        background: url(../icons/contacts/chat.svg);
+    }
+    &__call:before {
+        background: url(../icons/contacts/iphone.svg);
+    }
+    &__address:before {
+        background: url(../icons/contacts/pin.svg);
+    }
+    &__item-label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #787A80;
+    }
+    &__item-link {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #1E212C;
+    }
+    &__icons {
+        position: relative;
+        margin-top: 48px;
+        height: 72px;
+        display: flex;
+        align-items:flex-end;
+        &:before {
+            content: 'Follow us:';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #1E212C;
+        }
+    }
+    &__icon {
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            svg path {
+                fill: $red-color;
+                transition: all .3s;
+            }
+        }
+    }
+    &__map {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 412px;
+        align-content: end;
+    }
+    &__illustration {
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        top: 67px;
+        right:0;
+        width: 435px;
+        height: 481px;
+        @include img_cover;
+    }
+    &__inputs-groups {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        grid-template-rows: minmax(86px, auto);
+        grid-auto-rows: minmax(86px, auto);
+        gap: 24px 25px;
+    }
+    &__form-item {
+        display: grid;
+        grid-template-rows: 26px minmax(52px, auto);
+        row-gap: 8px;
+        &:last-child {
+            grid-column: 1/3;
+        }
+    }
+    &__form-label {
+        line-height: 160%;
+        color: #424551;
+    }
+    &__input,
+    &__textarea {
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        line-height: 160%;
+        color: #9A9CA5;
+        padding: 13px 16px;
+    }
+    &__textarea {
+        min-height: 128px;
+        resize: none;
+    }
+    &__form-bottom {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: 315px 340px;
+        column-gap: 50px;
+        grid-template-rows: minmax(52px, auto);
+    }
+    
+}

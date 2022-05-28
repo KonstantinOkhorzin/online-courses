@@ -21,8 +21,7 @@
     &__close {
         position: absolute;
         top: 28px;
-        right: 28px;
-        background: inherit;
+        right: 28px
     }
     &__title {
         font-weight: 700;
@@ -95,43 +94,6 @@
                 opacity: 0;
             }
         } 
-    }
-    &__checbox-label {
-        display: flex;
-        align-items: center;
-    }
-    &__checkbox {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        &:checked + .modal__custom-checkbox {
-            border: none;
-            background: url(../icons/checbox-checked.svg);
-        }
-        &:focus + .modal__custom-checkbox:before {
-            content: '';
-            position: absolute;
-            top: 2.5px;
-            left: 0px;
-            width: 16px;
-            height: 16px; 
-            border: 2px solid #000;
-            border-radius: 3px;
-        }
-    }
-    &__custom-checkbox {
-        width: 16px;
-        height: 16px;
-        border-radius: 3px;
-        border: 1px solid #D7DADD;
-    }
-    &__checkbox-messege {
-        font-size: 14px;
-        line-height: 150%;
-        color: #424551;
-        margin-left: 12px;
     }
     &__between {
         display: flex;

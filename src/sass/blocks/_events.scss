@@ -1,11 +1,4 @@
 .events {
-    &__subtitle {
-        text-align: center;
-    }
-    &__title {
-        text-align: center;
-        margin-top: 8px;
-    }
     &__toolbar {
         margin-top: 60px;
         height: 44px;
@@ -54,7 +47,6 @@
     }
     &__toolbar-list,
     &__toolbar-grid {
-        cursor: pointer;
         &_active {
             path {
                 fill: $red-color;
@@ -180,5 +172,8 @@
         font-size: 28px;
         line-height: 150%;
         color: #1E212C;
+    }
+    &__pagination {
+        margin-top: 60px;
     }
 }
