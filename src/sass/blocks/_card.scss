@@ -12,6 +12,9 @@
         grid-template-columns: 100%;
         grid-template-rows: 240px 198px;
     }
+    &_little {
+        grid-template-rows: 200px 220px;
+    }
     &__avatar {
         width: 214px;
         height: 214px;
@@ -25,6 +28,9 @@
             img {
                 border-radius: 4px 4px 0 0;
             }   
+        }
+        &_little {
+            height: 200px;
         }
     }
     &__content {
@@ -66,6 +72,16 @@
         &_dev {
             background: #7772F1;
         }
+        &_big {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        line-height: 168%;
+        color: #787A80;
     }
     &__course {
         margin-top: 20px;

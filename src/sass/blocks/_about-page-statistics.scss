@@ -1,0 +1,45 @@
+.about-page-statistics {
+    margin-top: 180px;
+    &__container {
+        position: relative;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 810px 288px;
+        padding-top: 84px;
+    }
+    &__img {
+        height: 500px;
+        @include img_cover;
+        img {
+            border-radius: 4px;
+        }
+    }
+    &__list-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-rows: 62px;
+        grid-auto-rows: 62px;
+        row-gap: 20px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__count {
+        margin-right: 16px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 130%;
+        letter-spacing: 1px;
+        color: $red-color;
+    }
+    &__descr {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #1E212C;
+    }
+}

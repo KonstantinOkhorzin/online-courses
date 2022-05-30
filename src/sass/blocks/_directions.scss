@@ -1,0 +1,32 @@
+.directions {
+    margin-top: 180px;
+    &__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 390px);
+        grid-template-rows: repeat(2, minmax(420px, auto));
+        grid-auto-rows: minmax(420px, auto);
+        gap: 30px;
+    }
+    &__action-link {
+        margin-top: 20px;
+    }
+    &__item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F4F5F7;
+        border-radius: 4px;
+    }
+    &__item-messege {
+        width: 242px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #424551;
+        padding-bottom: 28px;
+    }
+}

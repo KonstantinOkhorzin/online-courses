@@ -1,0 +1,11 @@
+.team {
+    margin-top: -10px;
+    &__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(416px, auto);
+        grid-auto-rows: minmax(416px, auto);
+        gap: 60px 30px;
+    }
+}

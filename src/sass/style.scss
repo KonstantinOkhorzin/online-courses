@@ -38,6 +38,12 @@ body._lock {
 @import 'blocks/courses';
 @import 'blocks/contacts';
 @import 'blocks/checkbox';
+@import 'blocks/intro';
+@import 'blocks/values';
+@import 'blocks/directions';
+@import 'blocks/process';
+@import 'blocks/team';
+@import 'blocks/companies';
 @import 'blocks/main-page';
 @import 'blocks/main-page-header';
 @import 'blocks/main-page-about';
@@ -46,5 +52,8 @@ body._lock {
 @import 'blocks/courses-page';
 @import 'blocks/events-page';
 @import 'blocks/blog-page.scss';
+@import 'blocks/about-page';
+@import 'blocks/about-page-statistics';
+
 
 

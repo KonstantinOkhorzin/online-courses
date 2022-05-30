@@ -1,0 +1,33 @@
+.intro {
+    margin-top: 80px;
+    &__container {
+        display: grid;
+        grid-template-columns: 600px 465px;
+        justify-content: space-between;
+    }
+    &__descr {
+        margin-top: 48px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1E212C;
+    }
+    &__text {
+        margin-top: 24px;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__btns {
+        margin-top: 60px;
+        width: 415px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 465px;
+        height: 400px;
+        display: grid;
+        align-self: flex-end;
+        @include img_cover;
+    }
+}
