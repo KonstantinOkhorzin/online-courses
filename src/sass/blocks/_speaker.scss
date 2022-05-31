@@ -1,0 +1,77 @@
+.speaker {
+    &__container {
+        display: grid;
+        grid-template-columns: 495px 600px;
+        justify-content: space-between;
+    }
+    &__avatar {
+        position: relative;
+        background-color: #FFCF2D;
+        border-radius: 4px;
+        height: 580px;
+    }
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 19px;
+        width: 458px;
+        height: 600px;
+        @include img_cover;
+    }
+    &__position {
+        margin-top: 16px;
+        font-size: 20px;
+        line-height: 150%;
+        color: #787A80;
+    }
+    &__statistics {
+        margin-top: 32px;
+        display: grid;
+        grid-template-rows: repeat(3, 26px);
+        row-gap: 4px;
+        padding-left: 24px;
+        font-weight: 700;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__statistics-item {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 4px;
+            display: block;
+            width: 16px;
+            height: 16px;
+;        }
+    }
+    &__rating:before {
+        background: url(../icons/speaker/star.svg)
+    }
+    &__courses:before {
+        background: url(../icons/speaker/play.svg)
+    }
+    &__students:before {
+        background: url(../icons/speaker/profile.svg)
+    }
+    &__text {
+        margin-top: 32px;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__icons {
+        margin-top: 40px;
+        display: flex;
+    }
+    &__icon {
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover svg path{
+            fill: $red-color;
+            transition: .3s;
+        }
+    }
+}

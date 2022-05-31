@@ -5,3 +5,8 @@
         object-fit: cover;
     }
 }
+
+@mixin main-text {
+    line-height: 160%;
+    color: #424551;
+}

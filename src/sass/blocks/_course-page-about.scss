@@ -1,0 +1,27 @@
+.course-page-about {
+    padding: 120px 0 114px;
+    &__container {
+        display: grid;
+        grid-template-columns: 600px 495px;
+        justify-content: space-between;
+    }
+    &__descr {
+        margin-top: 40px;
+        line-height: 160%;
+        color: #424551;
+    }
+    &__list-title {
+        margin-top: 48px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        color: #1E212C;
+    }
+    &__list {
+        margin-top: 24px;
+        display: grid;
+        grid-template-rows: minmax(26px, auto);
+        grid-auto-rows: minmax(26px, auto);
+        row-gap: 4px;
+    }
+}

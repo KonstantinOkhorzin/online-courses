@@ -1,0 +1,19 @@
+.program {
+    margin-top: 53px;
+    &__container {
+        display: grid;
+        grid-template-columns: 600px 495px;
+        justify-content: space-between;
+    }
+    &__accordion {
+        margin-top: 60px;
+    }
+    &__illustration {
+        padding-top: 70px;
+    }
+    &__img {
+        width: 495px;
+        height: 554px;
+        @include img_cover;
+    }
+}

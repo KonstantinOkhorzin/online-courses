@@ -1,0 +1,39 @@
+.register {
+    &__container {
+        display: grid;
+        grid-template-columns: 550px 495px;
+        justify-content: space-between;
+    }
+    &__illustration {
+        padding-top: 14px;
+    }
+    &__img {
+        width: 550px;
+        height: 502px;
+    }
+    &__inputs-group {
+        margin-top: 40px;
+        display: grid;
+        grid-template-rows: repeat(3, 86px);
+        row-gap: 24px;
+    }
+    &__form-item {
+        display: grid;
+        grid-template-rows: 26px 52px;
+        row-gap: 8px;
+    }
+    &__form-label {
+        @include main-text;
+    }
+    &__form-input {
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        line-height: 160%;
+        color: #9A9CA5;
+        padding: 13px 16px;
+    }
+    &__btn {
+        margin-top: 40px;
+        width: 100%;
+    }
+}

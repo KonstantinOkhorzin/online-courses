@@ -1,0 +1,15 @@
+.whom {
+    margin-top: 177px;
+    &__container {
+        display: grid;
+        grid-template-columns: 495px 600px;
+        justify-content: space-between;
+    }
+    &__list {
+        padding-top: 32px;
+        display: grid;
+        grid-template-rows: minmax(30px, auto);
+        grid-auto-rows: minmax(30px, auto);
+        row-gap: 20px;
+    }
+}

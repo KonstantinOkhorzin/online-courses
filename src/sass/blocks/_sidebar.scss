@@ -1,0 +1,37 @@
+.sidebar {
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    padding: 40px 32px;
+    &__list {
+        display: grid;
+        grid-template-rows: minmax(90px, auto);
+        grid-auto-rows: minmax(90px, auto);
+        row-gap: 32px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1E212C;
+    }
+    &__descr {
+        margin-top: 4px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: $red-color;
+    }
+    &__text {
+        margin-top: 8px;
+        line-height: 160%;
+        color: #787A80;
+    }
+    &__btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
