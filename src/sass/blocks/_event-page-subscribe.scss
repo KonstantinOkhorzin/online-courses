@@ -1,0 +1,41 @@
+.event-page-subscribe {
+    margin-top: 128px;
+    &__container {
+        border-radius: 4px;
+        padding: 60px 105px 60px 103px;
+        display: grid;
+        background-color: rgba($red-color, .2);
+        display: grid;
+        grid-template-columns: 308px 600px;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 100%;
+        height: 234px;
+        @include img_cover;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 130%;
+        color: #1E212C;
+    }
+    &__form {
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: 422px 154px;
+        grid-template-rows: 52px minmax(26px, auto);
+        row-gap: 24px;
+        justify-content: space-between;
+    }
+    &__input {
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        padding: 13px 16px;
+        line-height: 160%;
+        color: #9A9CA5;
+    }
+    &__checkbox {
+        grid-column: 1/3;
+    }
+}

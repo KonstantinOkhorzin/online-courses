@@ -1,0 +1,11 @@
+.event-page-about {
+    margin-top: 120px;
+    &__container {
+        display: grid;
+        grid-template-columns: 601px 495px;
+        justify-content: space-between;
+    }
+    &__accordion {
+        margin-top: 40px;
+    }
+}

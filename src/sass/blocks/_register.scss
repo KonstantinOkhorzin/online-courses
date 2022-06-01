@@ -3,13 +3,23 @@
         display: grid;
         grid-template-columns: 550px 495px;
         justify-content: space-between;
+        &_left {
+            grid-template-columns: 495px 600px;
+        }
     }
     &__illustration {
         padding-top: 14px;
+        &_left {
+            padding-top: 62px;
+        }
     }
     &__img {
-        width: 550px;
+        width: 100%;
         height: 502px;
+        @include img_cover;
+        &_left {
+            height: 468px;
+        }
     }
     &__inputs-group {
         margin-top: 40px;
@@ -35,5 +45,9 @@
     &__btn {
         margin-top: 40px;
         width: 100%;
+    }
+    &__messege {
+        margin-top: 24px;
+        @include main-text;
     }
 }

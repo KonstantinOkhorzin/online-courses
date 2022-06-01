@@ -1,0 +1,15 @@
+.event-page {
+    &__block {
+        margin-top: 114px;
+        background: url(../img/event-page__block.png) center center / cover no-repeat;
+        padding: 86px 0 52px;
+    }
+    &__register {
+        margin-top: 120px;
+    }
+    &__carousel-events {
+        margin-top: 120px;
+        padding: 100px 0 180px;
+        background: url(../img/event-page__carousel-events.png) center center / cover no-repeat;
+    }
+}
