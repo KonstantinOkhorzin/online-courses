@@ -21,3 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 
 tasks.txt
+/img-pages

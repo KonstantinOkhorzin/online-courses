@@ -1,0 +1,264 @@
+.post {
+    margin-top: 80px;
+    &__container {
+        display: grid;
+        grid-template-columns: 810px 342px;
+        justify-content: space-between;
+    }
+    &__meta {
+        display: flex;
+    }
+    &__type {
+        position: relative;
+        padding-left: 24px;
+        @include main-text;
+        margin-right: 24px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+            height: 16px;
+            width: 16px;
+            background: url(../../icons/blog/files.svg);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: -11px;
+            top: 5px;
+            width: 1px;
+            height: 16px;
+            background-color: #787A80;
+        }
+    }
+    &__catagory {
+        font-weight: 700;
+        line-height: 160%;
+        color: $red-color;
+    }
+    &__title {
+        margin: 12px 0 26px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &_mt60 {
+            margin-top: 60px;
+        }
+    }
+    &__date,
+    &__time {
+        position: relative;
+        line-height: 160%;
+        color: #787A80;
+        padding-left: 24px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__date {
+        margin-right: 24px;
+        &:before {
+            background: url(../icons/blog/calendar.svg);
+        }
+    }
+    &__time:before {
+        background: url(../icons/blog/clock.svg);
+    }
+    &__share {
+        display: flex;
+        align-items: center;
+    }
+    &__share-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: #1E212C;
+        margin-right: 12px;
+    }
+    &__social {
+        display: flex;
+        gap: 12px;
+    }
+    &__icon:hover svg path {
+        fill: $red-color;
+        transition: all .3s;
+    }
+    &__img {
+        margin-top: 40px;
+        width: 100%;
+        height: 360px;
+        @include img_cover;
+        img {
+            border-radius: 4px;
+        }
+    }
+    &__descr {
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1E212C
+    }
+    &__text {
+        margin-top: 24px;
+        @include main-text;
+    }
+    &__quotation {
+        position: relative;
+        margin: 53px 0 48px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1E212C;
+        padding-left: 58px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 28px;
+            height: 20px;
+            background: url(../icons/braces.svg);
+        }
+    }
+    &__list {
+        margin-top: 24px;
+        display: grid;
+        grid-template-rows: minmax(26px, auto);
+        grid-auto-rows: minmax(26px, auto);
+        row-gap: 4px;
+    }
+    &__tags {
+        display: flex;
+        align-items: center;
+    }
+    &__tags-title {
+        margin-right: 12px;
+        font-weight: 700;
+        line-height: 160%;
+        color: #1E212C;
+    }
+    &__tags-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    &__tags-item {
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #787A80;
+        padding: 5.5px 16px;
+        transition: all .3s;
+        &:hover {
+            border-color: $red-color;
+            background-color: $red-color;
+            color: #FFF;
+        }
+    }
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &__sidebar-title {
+        margin-bottom: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1E212C;
+    }
+    &__author-profile {
+        display: grid;
+        grid-template-columns: 100px 222px;
+        justify-content: space-between;
+        grid-template-rows: 100px;
+    }
+    &__author-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        padding: 0 15px;
+        background-color: #FFCF2D;
+        @include img_cover;
+    }
+    &__author-name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #424551;
+    }
+    &__author-position {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 150%;
+        color: #787A80;
+    }
+    &__author-social {
+        margin-top: 20px;
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, 20px);
+        grid-template-rows: 20px;
+        column-gap: 12px;
+    }
+    &__trending-list {
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        row-gap: 24px;
+    }
+    &__trending-item {
+        display: grid;
+        grid-template-columns: 100px 222px;
+        justify-content: space-between;
+    }
+    &__trending-img {
+        width: 100%;
+        height: 100%;
+        @include img_cover;
+        img {
+            border-radius: 4px;
+        }
+    }
+    &__trending-date {
+        position: relative;
+        font-size: 14px;
+        line-height: 150%;
+        color: #787A80;
+        padding-left: 24px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url(../icons/blog/calendar.svg);
+        }
+    }
+    &__trending-theme {
+        margin-top: 4px;
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        color: #1E212C;
+        transition: all .3s;
+        &:hover {
+            color: $red-color;
+        }
+    }
+}

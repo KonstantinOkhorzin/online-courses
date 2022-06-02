@@ -1,11 +1,4 @@
 .carousel-events {
-    &__list {
-        margin-top: 62px;
-        display: grid;
-        grid-template-columns: repeat(3, 390px);
-        grid-template-rows: minmax(323px, auto);
-        column-gap: 30px;
-    }
     &__item {
         padding: 24px;
         display: grid;
