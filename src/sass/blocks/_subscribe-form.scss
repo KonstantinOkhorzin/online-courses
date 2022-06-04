@@ -1,0 +1,16 @@
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 422px 154px;
+    grid-template-rows: 52px 26px;
+    grid-auto-rows: 26px;
+    gap: 24px;
+    &__input {
+        @include input-base;
+        line-height: 160%;
+        padding: 13px 16px;
+    }
+    &__checkbox {
+        grid-column: 1/3;
+    }
+}
+

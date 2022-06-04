@@ -39,18 +39,31 @@
         align-items: center;
     }
     &__statistics-item {
+        position: relative;
         display: flex;
         align-items: center;
-    }
-    &__statistics-ellipse {
-        width: 8px;
-        height: 8px;
-        background: $red-color;
-        border-radius: 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -73px;
+            width: 8px;
+            height: 8px;
+            background: $red-color;
+            border-radius: 100%;
+        }
+        &:last-child::before {
+            display: none;
+        }
     }
     &__statistics-count {
         margin-right: 12px;
         font-weight: 900;
         font-size: 46px;
+    }
+    &__statistics-descr {
+        line-height: 160%;
+        color: #1E212C;
     }
 }

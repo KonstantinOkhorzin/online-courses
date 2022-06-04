@@ -55,9 +55,9 @@
     }
     &__form-input {
         width: 291px;
-        border: 1px solid #D7DADD;
-        border-radius: 4px;
+        @include input-base;
         padding: 11px 16px 12px;
-        color: #9A9CA5;
+        font-size: 14px;
+        line-height: 150%;
     }
 }

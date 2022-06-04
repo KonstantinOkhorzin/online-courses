@@ -22,20 +22,5 @@
     }
     &__form {
         margin-top: 48px;
-        display: grid;
-        grid-template-columns: 422px 154px;
-        grid-template-rows: 52px minmax(26px, auto);
-        row-gap: 24px;
-        justify-content: space-between;
-    }
-    &__input {
-        border: 1px solid #D7DADD;
-        border-radius: 4px;
-        padding: 13px 16px;
-        line-height: 160%;
-        color: #9A9CA5;
-    }
-    &__checkbox {
-        grid-column: 1/3;
     }
 }

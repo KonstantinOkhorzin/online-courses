@@ -14,14 +14,13 @@
     }
     &__text {
         margin-top: 24px;
-        line-height: 160%;
-        color: #424551;
+        @include main-text;
     }
     &__btns {
-        margin-top: 60px;
-        width: 415px;
+        margin-top: 63px;
         display: flex;
-        justify-content: space-between;
+        gap: 20px;
+        
     }
     &__img {
         width: 465px;

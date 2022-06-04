@@ -22,8 +22,10 @@ body._lock {
 @import 'blocks/bulleted-line';
 @import 'blocks/heading.scss';
 @import 'blocks/events';
-@import 'blocks/card';
+@import 'blocks/card-courses';
 @import 'blocks/card-teams';
+@import 'blocks/card-events';
+@import 'blocks/card-blog';
 @import 'blocks/certificate';
 @import 'blocks/carousel-reviows';
 @import 'blocks/carousel__btns';
@@ -53,12 +55,11 @@ body._lock {
 @import 'blocks/program';
 @import 'blocks/accordion';
 @import 'blocks/register';
-@import 'blocks/carousel-events';
 @import 'blocks/main-page';
 @import 'blocks/main-page-header';
 @import 'blocks/main-page-about';
 @import 'blocks/main-page-courses';
-@import 'blocks/main-page-benefits';
+@import 'blocks/benefits';
 @import 'blocks/courses-page';
 @import 'blocks/events-page';
 @import 'blocks/blog-page.scss';
@@ -72,6 +73,7 @@ body._lock {
 @import 'blocks/post-page';
 @import 'blocks/slider';
 @import 'blocks/post';
+@import 'blocks/subscribe-form';
 
 
 

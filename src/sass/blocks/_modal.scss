@@ -20,8 +20,8 @@
     padding: 48px 0 48px;
     &__close {
         position: absolute;
-        top: 28px;
-        right: 28px
+        top: 25px;
+        right: 25px
     }
     &__title {
         font-weight: 700;
@@ -45,6 +45,7 @@
     }
     &__form-item {
         position: relative;
+        display: block;
         margin-top: 20px;
         &:first-child {
             margin-top: 0;
@@ -58,13 +59,11 @@
     &__input {
         display: block;
         width: 100%;
+        @include input-base;
         height: 44px;
         margin-top: 8px;
-        border: 1px solid #D7DADD;
-        border-radius: 4px;
         font-size: 14px;
         line-height: 150%;
-        color: #9A9CA5;
         padding: 11px 40px 12px 16px;
     }
     &__eye {
@@ -77,6 +76,7 @@
         bottom: 7px;
         right: 7px;
         cursor: pointer;
+        background: url(../icons/eye.svg) center center no-repeat;
         &:after {
             content: '';
             position: absolute;
@@ -95,7 +95,7 @@
             }
         } 
     }
-    &__between {
+    &__row {
         display: flex;
         justify-content: space-between;
     }

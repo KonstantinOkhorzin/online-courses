@@ -112,15 +112,12 @@
         }
     }
     &__form-label {
-        line-height: 160%;
-        color: #424551;
+        @include main-text;
     }
     &__input,
     &__textarea {
-        border: 1px solid #D7DADD;
-        border-radius: 4px;
+        @include input-base;
         line-height: 160%;
-        color: #9A9CA5;
         padding: 13px 16px;
     }
     &__textarea {

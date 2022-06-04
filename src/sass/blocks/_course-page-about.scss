@@ -7,8 +7,7 @@
     }
     &__descr {
         margin-top: 40px;
-        line-height: 160%;
-        color: #424551;
+        @include main-text;;
     }
     &__list-title {
         margin-top: 48px;

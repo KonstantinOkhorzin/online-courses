@@ -11,7 +11,7 @@
         z-index: 5;
     }
     &__menu {
-        width: 880px;
+        width: 890px;
         display: flex;
         justify-content: space-between;
         @media (max-width: 768px) {
@@ -30,8 +30,8 @@
         }
     }
     &__list {
-        width: 470px;
         display: flex;
+        padding-left: 7px;
         @media (max-width: 768px) {
             flex-direction: column;
         }
