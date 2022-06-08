@@ -2,19 +2,19 @@
     background: #F4F5F7;
     height: 454px;
     &__container {
+        position: relative;
         display: grid;
         grid-template-columns: 470px 600px;
         justify-content: space-between;
     }
-    &__illustration {
-        position: relative;
-    }
-    &__img {
+    &__wrapper-img {
         position: absolute;
         top: 0;
         left: -37px;
         width: 507px;
         height: 454px;
+    }
+    &__img {
         @include img_cover;
     }
     &__content {

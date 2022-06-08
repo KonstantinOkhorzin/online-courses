@@ -4,12 +4,12 @@
         grid-template-columns: 550px 495px;
         justify-content: space-between;
     }
-    &__illustration {
-        padding-top: 14px;
-    }
-    &__img {
+    &__wrapper-img{
+        margin-top: 14px;
         width: 100%;
         height: 502px;
+    }
+    &__img {
         @include img_cover;
     }
     &__inputs-group {
@@ -44,10 +44,8 @@
             &__container {
                 grid-template-columns: 495px 600px;
             }
-            &__illustration {
-                padding-top: 62px;
-            }
-            &__img {
+            &__wrapper-img {
+                margin-top: 62px;
                 height: 468px;
             }
         }

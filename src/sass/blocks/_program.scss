@@ -1,5 +1,5 @@
 .program {
-    margin-top: 53px;
+    margin-top: 56px;
     &__container {
         display: grid;
         grid-template-columns: 600px 495px;
@@ -8,12 +8,12 @@
     &__accordion {
         margin-top: 60px;
     }
-    &__illustration {
-        padding-top: 70px;
+    &__wrapper-img {
+        margin-top: 70px;
+        width: 100%;
+        height: 554px;
     }
     &__img {
-        width: 495px;
-        height: 554px;
         @include img_cover;
     }
 }

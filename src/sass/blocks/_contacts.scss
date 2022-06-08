@@ -1,6 +1,7 @@
 .contacts {
     margin: 80px 0 180px;
     &__container {
+        position: relative;
         display: grid;
         grid-template-columns: 420px 705px;
         grid-template-rows: minmax(444px, auto) minmax(614px, auto);
@@ -84,23 +85,25 @@
         grid-template-rows: 412px;
         align-content: end;
     }
-    &__illustration {
-        position: relative;
-    }
-    &__img {
+    &__wrapper-img {
         position: absolute;
-        top: 67px;
-        right:0;
+        bottom: 66px;
+        left: -15px;
         width: 435px;
         height: 481px;
+    }
+    &__img {
         @include img_cover;
+    }
+    &__form {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
     &__inputs-groups {
         margin-top: 40px;
         display: grid;
         grid-template-columns: repeat(2, 340px);
-        grid-template-rows: minmax(86px, auto);
-        grid-auto-rows: minmax(86px, auto);
+        grid-template-rows: 86px 86px 162px;
         gap: 24px 25px;
     }
     &__form-item {

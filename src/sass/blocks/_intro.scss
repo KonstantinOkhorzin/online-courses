@@ -22,11 +22,13 @@
         gap: 20px;
         
     }
-    &__img {
-        width: 465px;
+    &__wrapper-img {
+        width: 100%;
         height: 400px;
         display: grid;
         align-self: flex-end;
+    }
+    &__img {
         @include img_cover;
     }
 }

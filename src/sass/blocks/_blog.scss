@@ -56,8 +56,10 @@
     }
     &__list {
         margin-top: 60px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 390px);
+        grid-template-rows: 507px;
+        grid-auto-rows: 507px;
         gap: 60px 30px;
     }
     &__pagination {

@@ -9,9 +9,11 @@
         grid-template-columns: 308px 600px;
         justify-content: space-between;
     }
-    &__img {
+    &__wrapper-img {
         width: 100%;
         height: 234px;
+    }
+    &__img {
         @include img_cover;
     }
     &__title {
@@ -21,6 +23,6 @@
         color: #1E212C;
     }
     &__form {
-        margin-top: 48px;
+        margin-top: 50px;
     }
 }

@@ -1,5 +1,5 @@
 .promotion {
-    margin-top: 177px;
+    margin-top: 180px;
     &__container {
         padding: 48px 60px;
         border-radius: 4px;
@@ -7,7 +7,7 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: 48px 73px;
-        row-gap: 32px;
+        row-gap: 27px;
     }
     &__title {
         font-weight: 900;

@@ -25,9 +25,11 @@
             display: none;
         }
     }
-    &__icon {
+    &__wrapper-img {
         width: 48px;
         height: 48px;
+    }
+    &__img {
         @include img_cover;
     }
     &__title {

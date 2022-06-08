@@ -5,15 +5,17 @@
         display: grid;
         grid-template-columns: 705px 390px;
         grid-template-rows: minmax(560px, auto);
-        column-gap: 135px;
+        justify-content: space-between;
+    }
+    &__wrapper-img {
+        width: 100%;
+        height: 560px;
     }
     &__img {
-        width: 705px;
-        height: 560px;
         @include img_cover;
     }
     &__bulleted-list {
-        margin-top: 40px;
+        margin-top: 42px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: minmax(26px, auto);

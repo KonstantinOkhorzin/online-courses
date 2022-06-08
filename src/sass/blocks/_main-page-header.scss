@@ -2,10 +2,11 @@
     background: url('../img/main-page-header__bg.png') center center / cover no-repeat;
     padding:20px 0 80px;
     &__content {
+        position: relative;
         margin-top: 128px;
         display: grid;
         grid-template-columns: 496px 602px;
-        column-gap: 132px;
+        justify-content: space-between;
     }
     &__title {
         margin-top: 24px;
@@ -20,16 +21,15 @@
         display: flex;
         justify-content: space-between;
     }
-    &__img {
-        position: relative;
-    }
-    &__illustration {
+    &__wrapper-img {
         position: absolute;
         top: 0;
-        left: 49px;
+        right: -47px;
         width: 602px;
         height: 551px;
-        @include img_cover;
+    }
+    &__img {
+        @include img_cover; 
     }
     &__statistics {
         margin-top: 257px;

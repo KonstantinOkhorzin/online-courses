@@ -10,12 +10,14 @@
         border-radius: 4px;
         height: 580px;
     }
-    &__img {
+    &__wrapper-img {
         position: absolute;
         bottom: 0;
         left: 19px;
         width: 458px;
         height: 600px;
+    }
+    &__img {
         @include img_cover;
     }
     &__position {
