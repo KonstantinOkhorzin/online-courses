@@ -54,8 +54,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  //tabs
+  const tabs = document.querySelectorAll('.benefits__tab');
+  const tabsContent = document.querySelectorAll('.benefits__tab-content');
 
+  // function hideTabContent () {
+  //   tabsContent.forEach(item => {
+  //     item.classList.remove('benefits__tab-content_active');
+  //   });
 
+  //   tabs.forEach(item => {
+  //     item.classList.remove('benefits__tab_active');
+  //   });
+  // }
+
+  // function showTabContent(i = 0) {
+  //   tabsContent[i].classList.add('benefits__tab-content_active');
+  //   tabs[i].classList.add('benefits__tab_active');
+  // }
+
+  // hideTabContent ();
+  // showTabContent();
+
+  // tabs.forEach((tab, i) => {
+  //   tab.addEventListener('click', () => {
+  //     hideTabContent ();
+  //     showTabContent(i);
+  //   });
+  // });
+
+  // Cокращенный вариант
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+      tabsContent.forEach(item => {
+        item.classList.remove('benefits__tab-content_active');
+      });
+      tabs.forEach(item => {
+        item.classList.remove('benefits__tab_active');
+      });
+      tabsContent[i].classList.add('benefits__tab-content_active');
+      tabs[i].classList.add('benefits__tab_active');
+    });
+  });
+ 
 });
 
 

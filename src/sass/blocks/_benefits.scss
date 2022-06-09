@@ -31,9 +31,13 @@
     }
     &__tab-content {
         margin-top: 60px;
-        display: grid;
+        display: none;
         grid-template-columns: 495px 600px;
         justify-content: space-between;
+        &_active {
+            display: grid;
+            @include fade;
+        }
     }
     &__tab-wrapper-img {
         width: 100%;
