@@ -8,22 +8,27 @@
     }
     &__logo {
         position: relative;
-        z-index: 5;
+        z-index: 10;
     }
     &__menu {
-        width: 890px;
+        width: 1060px;
         display: flex;
-        justify-content: space-between;
+        @media (max-width: 992px) {
+            width: auto;
+        }
         @media (max-width: 768px) {
             position: fixed;
             top: 0;
             left: -100%;
+            z-index: 5;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(250, 250, 250, 1);
             padding: 100px 30px 30px 30px;
             transition: left 0.3s ease 0s;
             overflow: auto;
+            flex-direction: column;
+            align-items: center;
             &_active {
                 left: 0;
             }
@@ -31,9 +36,13 @@
     }
     &__list {
         display: flex;
-        padding-left: 7px;
+        flex-grow: 1;
         @media (max-width: 768px) {
             flex-direction: column;
+            flex-grow: 0;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
         }
     }
     &__link {
@@ -41,6 +50,15 @@
         font-weight: 700;
         color: #424551;
         padding: 18px 20px;
+        @media (max-width: 1260px) {
+            font-size: 14px;
+        }
+        @media (max-width: 992px) {
+            padding: 18px 7px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
         &:hover {
             color: $red-color;
             transition: all .3s;
@@ -52,37 +70,67 @@
     &__account {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 144px;
         font-weight: 700;
         line-height: 160%;
         color: #424551;
-    }
-    &__log-in {
-        display: flex;
-        align-items: center;
-        span {
-            display: block;
-            font-weight: 700;
-            line-height: 160%;
-            color: #424551;
-            margin-left: 8px;
+        margin-left: 33px;
+        @media (max-width: 1260px) {
+            font-size: 14px;
+            width: 120px;
+        }
+        @media (max-width: 992px) {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            order: -1;
+            font-size: 24px;
+            width: 100%;
+            justify-content: center;
+            gap: 10px;
         }
     }
-    &__register {
+    &__log-in {
+        position: relative;
+        width: 71px;
+        padding-left: 28px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
             display: block;
-            font-weight: 700;
-            line-height: 160%;
-            color: #424551;
+            width: 20px;
+            height: 20px;
+            background: url('../icons/profile.svg');
+        }
+        @media (max-width: 1260px) {
+            width: 60px;
+            padding-left: 23px;
+        }
+        @media (max-width: 768px) {
+            width: auto;
+            &:before {
+                top: 8px;
+            }
+        }
+    }
+    &__btn {
+        @media (max-width: 768px) {
+            margin-top: 50px;
+        }
     }
     &__burger {
         display: none;
         @media (max-width: 768px) {
-            z-index: 5;
+            z-index: 10;
             display: block;
             position: relative;
             width: 30px;
             height: 18px;
             cursor: pointer;
+            order: 1;
             span,
             &:before,
             &:after {
@@ -91,7 +139,7 @@
                 height: 10%;
                 width: 100%;
                 transition: all 0.3s;
-                background-color: #fff;
+                background-color: $red-color;
             }
             span {
                 top: 50%;
