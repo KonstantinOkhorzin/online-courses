@@ -189,19 +189,19 @@
                 <h3 class="promotion__title">20% discount for early birds!</h3>
                 <div class="promotion__timer">
                     <div class="promotion__timer-item">
-                        <span class="promotion__timer-count">06</span>
+                        <span class="promotion__timer-count" id="days">06</span>
                         Days
                     </div>
                     <div class="promotion__timer-item">
-                        <span class="promotion__timer-count">18</span>
+                        <span class="promotion__timer-count" id="hours">18</span>
                         Hours
                     </div>
                     <div class="promotion__timer-item">
-                        <span class="promotion__timer-count">24</span>
+                        <span class="promotion__timer-count" id="minutes">24</span>
                         Mins
                     </div>
                     <div class="promotion__timer-item">
-                        <span class="promotion__timer-count">12</span>
+                        <span class="promotion__timer-count" id="seconds">12</span>
                         Sec
                     </div>
                 </div>
@@ -243,9 +243,9 @@
             <div class="program__content">
                 <h2 class="subtitle">Course program</h2>
                 <div class="title">What will you learn</div>
-                <ul class="accordion program__accordion">
-                    <li class="accordion__item accordion__item_active">
-                        <button class="accordion__title">
+                <ul class="accordion program__accordion" data-accordions data-one-accordion>
+                    <li class="accordion__item">
+                        <button class="accordion__title _active" data-accordion>
                             <span class="accordion__number">Lesson 1.</span>Aliquet lectus urna viverra in odio.
                         </button>
                         <p class="accordion__text">
@@ -253,7 +253,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 2.</span>Orci commodo, viverra orci mollis ut euismod.
                         </button>
                         <p class="accordion__text">
@@ -261,7 +261,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 3.</span>Sagittis vitae facilisi rutrum amet mauris quisque vel.
                         </button>
                         <p class="accordion__text">
@@ -269,7 +269,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 4.</span>In id dolor quis nunc, urna hendrerit pharetra.
                         </button>
                         <p class="accordion__text">
@@ -277,7 +277,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 5.</span>Est, ut tempus id rutrum facilisi.
                         </button>
                         <p class="accordion__text">
@@ -285,7 +285,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 6.</span>Amet nec in pellentesque.
                         </button>
                         <p class="accordion__text">
@@ -293,7 +293,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 7.</span>Massa vel arcu mauris, id vel rhoncus mattis quis.
                         </button>
                         <p class="accordion__text">
@@ -301,7 +301,7 @@
                         </p>
                     </li>
                     <li class="accordion__item">
-                        <button class="accordion__title">
+                        <button class="accordion__title" data-accordion>
                             <span class="accordion__number">Lesson 8.</span>Neque, cursus sapien nullam id.
                         </button>
                         <p class="accordion__text">
@@ -452,7 +452,7 @@
 
     <footer class="footer">
         <div class="footer__body">
-            <div class="container footer__container">
+            <div class="container footer__container" data-accordions="576,max">
                 <div class="footer__column">
                     <a href="index.html" class="logo footer__logo">
                         <img src="icons/logo-black.svg" alt="logo">
@@ -500,7 +500,7 @@
                     </div>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__title">SITE MAP</h3>
+                    <button class="footer__title" tabindex="-1" data-accordion >SITE MAP</button>
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a href="about.html" class="footer__link">About Us</a>
@@ -520,27 +520,27 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__title">COURSES</h3>
+                    <button class="footer__title" tabindex="-1" data-accordion >COURSES</button>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Marketing</a>
+                            <a href="courses.html" class="footer__link">Marketing</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Management</a>
+                            <a href="courses.html" class="footer__link">Management</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">HR & Recruting</a>
+                            <a href="courses.html" class="footer__link">HR & Recruting</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Design</a>
+                            <a href="courses.html" class="footer__link">Design</a>
                         </li>
                         <li class="footer__item">
-                            <a href="#" class="footer__link">Development</a>
+                            <a href="courses.html" class="footer__link">Development</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__title">CONTACT US</h3>
+                    <button class="footer__title" tabindex="-1" data-accordion >CONTACT US</button>
                     <ul class="footer__list">
                         <li class="footer__item">
                             <a href="tel:4055550128" class="footer__link">
@@ -567,7 +567,7 @@
                     </ul>
                 </div>
                 <div class="footer__column">
-                    <h3 class="footer__title">SIGN UP TO OUR NEWSLETTER</h3>
+                    <button class="footer__title" tabindex="-1" data-accordion>SIGN UP TO OUR NEWSLETTER</button>
                     <form action="#" class="footer__form">
                         <input type="email" class="footer__input" placeholder="Email address">
                         <button class="footer__btn">
@@ -578,11 +578,11 @@
                                     fill="#fff" />
                             </svg>
                         </button>
+                        <div class="footer__message">
+                            *Subscribe to our newsletter to receive communications and early updates from Createx SEO
+                            Agency.
+                        </div>
                     </form>
-                    <div class="footer__message">
-                        *Subscribe to our newsletter to receive communications and early updates from Createx SEO
-                        Agency.
-                    </div>
                 </div>
             </div>
         </div>
@@ -601,7 +601,8 @@
             </div>
         </div>
     </footer>
-
+    
+    <script src="js/course.js"></script>
     <script src="js/script.js"></script>
 </body>
 

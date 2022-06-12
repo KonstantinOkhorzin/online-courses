@@ -3,38 +3,31 @@
     grid-template-rows: minmax(30px, auto);
     grid-auto-rows: minmax(30px, auto);
     row-gap: 24px;
-    &__item {
-        position: relative;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 5px;
-            left: 0;
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: url(../icons/plus.svg);
-            cursor: pointer;
-        }
-        &_active {
-            display: grid;
-            grid-template-rows: repeat(2, minmax(30px, auto));
-            row-gap: 16px;
-            &:before {
-                background: url(../icons/minus.svg);
-            }
-            .accordion__text {
-                display: block;
-            }
-        }
-    }
     &__title {
+        position: relative;
         text-align: start;
         font-weight: 700;
         font-size: 20px;
         line-height: 150%;
         color: #1E212C;
         padding-left: 40px;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 1px;
+            top: 15px;
+            width: 18px;
+            height: 2px;
+            background-color: $red-color;
+            transition: transform 0.3s ease 0s;
+        }
+        &:after {
+            transform: rotate(-90deg);
+        }
+        &._active::after {
+            transform: rotate(0deg);
+        }
     }
     &__number {
         font-weight: 400;
@@ -43,7 +36,7 @@
     }
     &__text {
         @include main-text;
-        display: none;
         padding-left: 40px;
+        margin-top: 16px;
     }
 }
