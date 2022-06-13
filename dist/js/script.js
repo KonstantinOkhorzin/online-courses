@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  //Меню бургер
+  //Меню бургер------------------------------------------------------------------------------------------------
   const iconMenu = document.querySelector('.navbar__burger');
   const menuBody = document.querySelector('.navbar__menu');
   if (iconMenu) {
@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  //to top
+  //to top------------------------------------------------------------------------------------------------------
   const toTopBtn = document.querySelector('.footer__scroll-up');
   toTopBtn.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  //remove hover
+  //remove hover------------------------------------------------------------------------------------------------
   function hasTouch() {
     return 'ontouchstart' in document.documentElement || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
   }
@@ -41,37 +41,51 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (ex) { }
   }
 
-  //show password 
+  //show password ----------------------------------------------------------------------------------------
   const eyes = document.querySelectorAll('.modal__eye');
   eyes.forEach(eye => {
     eye.addEventListener('click', () => {
       eye.classList.toggle('modal__eye_active');
-      if (eye.previousElementSibling.getAttribute('type') === 'password') {
-        eye.previousElementSibling.setAttribute('type', 'text');
+      const input = eye.previousElementSibling;
+      if (input.getAttribute('type') === 'password') {
+        input.setAttribute('type', 'text');
       } else {
-        eye.previousElementSibling.setAttribute('type', 'password');
+        input.setAttribute('type', 'password');
       }
     });
   });
 
-  //tabs
+  //tabs---------------------------------------------------------------------------------------------------
   const tabs = document.querySelectorAll('.benefits__tab');
   const tabsContent = document.querySelectorAll('.benefits__tab-content');
 
-  tabs.forEach((tab, i) => {
-    tab.addEventListener('click', () => {
-      tabsContent.forEach(item => {
-        item.classList.remove('benefits__tab-content_active');
-      });
-      tabs.forEach(item => {
-        item.classList.remove('benefits__tab_active');
-      });
-      tabsContent[i].classList.add('benefits__tab-content_active');
-      tabs[i].classList.add('benefits__tab_active');
+  function hideTabContent() {
+    tabsContent.forEach(item => {
+      item.classList.remove('benefits__tab-content_active');
+    });
+
+    tabs.forEach(item => {
+      item.classList.remove('benefits__tab_active');
+    });
+  }
+
+  function showTabContent(i = 0) {
+    tabsContent[i].classList.add('benefits__tab-content_active');
+    tabs[i].classList.add('benefits__tab_active');
+  }
+
+  hideTabContent();
+  showTabContent();
+
+  tabs.forEach((item, i) => {
+    item.addEventListener('click', () => {
+      hideTabContent();
+      showTabContent(i);
     });
   });
 
-  // Accordion
+
+  // Accordion----------------------------------------------------------------------------------------------
   const accordionsArray = document.querySelectorAll('[data-accordions]');
   if (accordionsArray.length) {
     const accordionsRegular = Array.from(accordionsArray).filter(item => {
