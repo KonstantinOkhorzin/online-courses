@@ -268,11 +268,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCloseBtn = document.querySelector('.modal__close');
   const overlay = document.querySelector('.overlay');
   
-  modalTrigger.addEventListener('click', () => {
+  function openModal() {
     overlay.classList.add('overlay_active');
     modal.classList.add('modal_active');
     document.body.style.overflow = 'hidden';
-  });
+    clearInterval(modalTimerId); //если user сам откроет тогда удаляем
+  }
+  modalTrigger.addEventListener('click', openModal);
 
   function closeModal() {
     modal.classList.remove('modal_active');
@@ -294,7 +296,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+  const modalTimerId = setTimeout(openModal, 10000);
+
+  function showModalByScroll() {
+    //если user доскролил до конца страницы
+    if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+      openModal();
+      window.removeEventListener('scroll', showModalByScroll); //удаляем событие после одного показа
+    }
+  }
+
+  window.addEventListener('scroll', showModalByScroll);
 });
 
 
