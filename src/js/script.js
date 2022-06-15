@@ -262,6 +262,39 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 
+  // Modal----------------------------------------------------------------------------------------------
+  const modalTrigger = document.querySelector('[data-modal-consultation]');
+  const modal = document.querySelector('#consultation');
+  const modalCloseBtn = document.querySelector('.modal__close');
+  const overlay = document.querySelector('.overlay');
+  
+  modalTrigger.addEventListener('click', () => {
+    overlay.classList.add('overlay_active');
+    modal.classList.add('modal_active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function closeModal() {
+    modal.classList.remove('modal_active');
+    overlay.classList.remove('overlay_active');
+    document.body.style.overflow = '';
+  }
+
+  modalCloseBtn.addEventListener('click', closeModal);
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape' && overlay.classList.contains('overlay_active')) {
+      closeModal();
+    }
+  });
+
+  
 });
 
 
