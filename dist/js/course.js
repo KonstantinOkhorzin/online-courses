@@ -6,12 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const deadline = '2022-06-30';
     //Функция для получения разницы между датами
     function getTimeRemaining(endtime) {
+        let days, hours, min, sec;
         const t = Date.parse(endtime) - Date.parse(new Date()); //разница между датами в милисекундах
-        const days = Math.floor(t / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((t / (1000 * 60 * 60) % 24));
-        const min = Math.floor((t / 1000 / 60) % 60);
-        const sec = Math.floor((t / 1000) % 60);
-
+        // Если текущая дата уже прошла проставляем нули
+        if (t <= 0) {
+            days = 0;
+            hours = 0;
+            min = 0;
+            sec = 0;
+        } else {
+            days = Math.floor(t / (1000 * 60 * 60 * 24));
+            hours = Math.floor((t / (1000 * 60 * 60) % 24));
+            min = Math.floor((t / 1000 / 60) % 60);
+            sec = Math.floor((t / 1000) % 60);
+        }
+        
         return {
             'total': t,
             'days': days,

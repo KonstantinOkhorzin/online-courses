@@ -21,7 +21,11 @@
     &__close {
         position: absolute;
         top: 25px;
-        right: 25px
+        right: 25px;
+        transition: transform .3s ease-out 0s;
+        &:hover {
+            transform: rotate(90deg);
+        }
     }
     &__title {
         font-weight: 700;
