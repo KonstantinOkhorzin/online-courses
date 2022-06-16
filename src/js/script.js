@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // class CardCourses---------------------------------------------------------------------------------------------
   class CardCourses {
-    constructor(src, category, course, price, speaker, parentSelector) {
+    constructor(src, category, course, price, speaker, parentSelector, ...classes) {
       this.src = src;
       this.category = category;
       this.course = course;
@@ -320,6 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.speaker = speaker;
       this.parent = document.querySelector(parentSelector);
       this.modificator = this.setCatagoryClass();
+      this.classes = classes;
     }
     setCatagoryClass() {
       switch(this.category) {
@@ -339,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     render() {
       const element = document.createElement('li');
-      element.classList.add('card-courses');
+      this.classes.forEach(className => element.classList.add(className));
       element.innerHTML = `
         <div class="card-courses__avatar">
           <img class="card-courses__img" src=${this.src} alt="by ${this.speaker}">
@@ -364,7 +365,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "The Ultimate Google Ads Training Course",
     100,
     "Jerome Bell",
-    ".main-page-courses__list"
+    ".main-page-courses__list",
+    'card-courses'
   ).render();
 
   new CardCourses(
@@ -373,7 +375,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "Prduct Management Fundamentals",
     480,
     "Marvin McKinney",
-    ".main-page-courses__list"
+    ".main-page-courses__list",
+    'card-courses'
   ).render();
 
   new CardCourses(
@@ -382,7 +385,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "HR Management and Analytics",
     200,
     "Leslie Alexander Li",
-    ".main-page-courses__list"
+    ".main-page-courses__list",
+    'card-courses'
   ).render();
 
 });
