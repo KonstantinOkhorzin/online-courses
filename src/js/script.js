@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('#consultation');
   const modalCloseBtn = document.querySelector('.modal__close');
   const overlay = document.querySelector('.overlay');
-  
+
   function openModal() {
     overlay.classList.add('overlay_active');
     modal.classList.add('modal_active');
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  const modalTimerId = setTimeout(openModal, 10000);
+  const modalTimerId = setTimeout(openModal, 1000000000);
 
   function showModalByScroll() {
     //если user доскролил до конца страницы
@@ -307,6 +307,84 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', showModalByScroll);
+
+
+
+  // class CardCourses---------------------------------------------------------------------------------------------
+  class CardCourses {
+    constructor(src, category, course, price, speaker, parentSelector) {
+      this.src = src;
+      this.category = category;
+      this.course = course;
+      this.price = price;
+      this.speaker = speaker;
+      this.parent = document.querySelector(parentSelector);
+      this.modificator = this.setCatagoryClass();
+    }
+    setCatagoryClass() {
+      switch(this.category) {
+        case 'Marketing':
+          return 'marketing';
+        case 'Management':
+          return 'management';
+        case 'HR & Recruting':
+          return 'hr';
+        case 'Design':
+          return 'design';
+        case 'Development':
+          return 'dev';
+        default:
+          return 'dev';
+      } 
+    }
+    render() {
+      const element = document.createElement('li');
+      element.classList.add('card-courses');
+      element.innerHTML = `
+        <div class="card-courses__avatar">
+          <img class="card-courses__img" src=${this.src} alt="by ${this.speaker}">
+        </div>
+        <div class="card-courses__content">
+          <a class="card-courses__category card-courses__category_${this.modificator}"
+            href="courses.html">${this.category}</a>
+          <a class="card-courses__course" href="course.html">${this.course}</a>
+          <div class="card-courses__info">
+            <div class="card-courses__price">${this.price}</div>
+            <div class="card-courses__speaker">by ${this.speaker}</div>
+          </div>
+        </div>
+      `;
+      this.parent.append(element);
+    }
+  }
+
+  new CardCourses(
+    "img/card__speakers/Jerome-Bell.jpg",
+    "Marketing",
+    "The Ultimate Google Ads Training Course",
+    100,
+    "Jerome Bell",
+    ".main-page-courses__list"
+  ).render();
+
+  new CardCourses(
+    "img/card__speakers/Marvin-McKinney.jpg",
+    "Management",
+    "Prduct Management Fundamentals",
+    480,
+    "Marvin McKinney",
+    ".main-page-courses__list"
+  ).render();
+
+  new CardCourses(
+    "img/card__speakers/Leslie-Alexander.jpg",
+    "HR & Recruting",
+    "HR Management and Analytics",
+    200,
+    "Leslie Alexander Li",
+    ".main-page-courses__list"
+  ).render();
+
 });
 
 
