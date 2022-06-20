@@ -126,96 +126,7 @@
                 <h2 class="title">Featured Courses</h2>
                 <a href="courses.html" class="btn heading__item-absolute">View all courses</a>
             </div>
-            <ul class="main-page-courses__list">
-                <!-- <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Jerome-Bell.jpg" alt="by Jerome Bell">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_marketing"
-                            href="courses.html">Marketing</a>
-                        <a class="card-courses__course" href="course.html">The Ultimate Google Ads Training Course</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$100</div>
-                            <div class="card-courses__speaker">by Jerome Bell</div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Marvin-McKinney.jpg" alt="by Marvin McKinney">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_management"
-                            href="courses.html">Management</a>
-                        <a class="card-courses__course" href="course.html">Prduct Management Fundamentals</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$480</div>
-                            <div class="card-courses__speaker">by Marvin McKinney</div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Leslie-Alexander.jpg" alt="by Leslie Alexander Li">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_hr" href="courses.html">HR &
-                            Recruting</a>
-                        <a class="card-courses__course" href="course.html">HR Management and Analytics</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$200</div>
-                            <div class="card-courses__speaker">by Leslie Alexander Li</div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Kristin-Watson.jpg" alt="by Kristin Watson">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_marketing"
-                            href="courses.html">Marketing</a>
-                        <a class="card-courses__course" href="course.html">Brand Management & PR Communications</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$530</div>
-                            <div class="card-courses__speaker">by Kristin Watson</div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Dianne-Russell.jpg" alt="by Dianne Russell">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_management"
-                            href="courses.html">Management</a>
-                        <a class="card-courses__course" href="course.html">Business Development Management</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$400</div>
-                            <div class="card-courses__speaker">by Dianne Russell</div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="card-courses">
-                    <div class="card-courses__avatar">
-                        <img class="card-courses__img" src="img/card__speakers/Guy-Hawkins.jpg" alt="by Guy Hawkins">
-                    </div>
-                    <div class="card-courses__content">
-                        <a class="card-courses__category card-courses__category_design" href="courses.html">Design</a>
-                        <a class="card-courses__course" href="course.html">Graphic Design Basic</a>
-                        <div class="card-courses__info">
-                            <div class="card-courses__price">$500</div>
-                            <div class="card-courses__speaker">by Guy Hawkins</div>
-                        </div>
-                    </div>
-                </li> -->
-            </ul>
+            <ul class="main-page-courses__list"></ul>
         </div>
     </div>
 
@@ -929,25 +840,18 @@
 
     <div class="overlay">
         <div class="modal" id="consultation">
-            <button class="modal__close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L12 10.5858L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.4142 12L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12 13.4142L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.5858 12L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289Z"
-                        fill="#787A80" />
-                </svg>
-            </button>
+            <button class="modal__close"></button>
             <div class="modal__title">Get consultation</div>
             <div class="modal__text">We will help with the choice of direction, send detailed course programs and additional materials.</div>
-            <form action="#" class="modal__form">
+            <form action="#" class="modal__form" id="form-consultation">
                 <label class="modal__form-item">
                     <span class="modal__label">Full Name</span>
-                    <input class="modal__input" type="text" placeholder="Your full name">
+                    <input class="modal__input" type="text" placeholder="Your full name" name="name">
                 </label>
                 <label class="modal__form-item">
                     <span class="modal__label">Phone</span>
-                    <input class="modal__input" type="number" placeholder="Your phone number">
+                    <input class="modal__input" type="number" placeholder="Your phone number" name="phone">
                 </label>
-
                 <button class="btn btn_red btn_little modal__btn">leave a request</button>
             </form>
             <div class="modal__icons">
@@ -986,13 +890,7 @@
             </div>
         </div>
         <!-- <div class="modal" id="sing-up">
-            <button class="modal__close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L12 10.5858L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.4142 12L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12 13.4142L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.5858 12L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289Z"
-                        fill="#787A80" />
-                </svg>
-            </button>
+            <button class="modal__close"></button>
             <div class="modal__title">Sign up</div>
             <div class="modal__text">Registration takes less than a minute but gives you full control over your
                 studying.</div>
@@ -1060,13 +958,7 @@
             </div>
         </div> -->
         <!-- <div class="modal" id="sing-in">
-            <button class="modal__close" href="#">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.29289 4.29289C4.68342 3.90237 5.31658 3.90237 5.70711 4.29289L12 10.5858L18.2929 4.29289C18.6834 3.90237 19.3166 3.90237 19.7071 4.29289C20.0976 4.68342 20.0976 5.31658 19.7071 5.70711L13.4142 12L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12 13.4142L5.70711 19.7071C5.31658 20.0976 4.68342 20.0976 4.29289 19.7071C3.90237 19.3166 3.90237 18.6834 4.29289 18.2929L10.5858 12L4.29289 5.70711C3.90237 5.31658 3.90237 4.68342 4.29289 4.29289Z"
-                        fill="#787A80" />
-                </svg>
-            </button>
+            <button class="modal__close" href="#"></button>
             <div class="modal__title">Sign in</div>
             <div class="modal__text">Sign in to your account using email and password provided during registration.
             </div>

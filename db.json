@@ -1,0 +1,50 @@
+{
+  "courses": [
+    {
+      "speaker": "Jerome Bell",
+      "avatar": "img/card__speakers/Jerome-Bell.jpg",
+      "course": "The Ultimate Google Ads Training Course",
+      "category": "Marketing",
+      "price": 100
+    },
+    {
+      "speaker": "Marvin McKinney",
+      "avatar": "img/card__speakers/Marvin-McKinney.jpg",
+      "course": "Prduct Management Fundamentals",
+      "category": "Management",
+      "price": 480
+    },
+    {
+      "speaker": "Leslie Alexander Li",
+      "avatar": "img/card__speakers/Leslie-Alexander.jpg",
+      "course": "HR  Management and Analytics",
+      "category": "HR & Recruting",
+      "price": 200
+    },
+    {
+      "speaker": "Kristin Watson",
+      "avatar": "img/card__speakers/Kristin-Watson.jpg",
+      "course": "Brand Management & PR Communications",
+      "category": "Marketing",
+      "price": 530
+    },
+    {
+      "speaker": "Dianne Russell",
+      "avatar": "img/card__speakers/Dianne-Russell.jpg",
+      "course": "Business Development Management",
+      "category": "Management",
+      "price": 400
+    },
+    {
+      "speaker": "Guy Hawkins",
+      "avatar": "img/card__speakers/Guy-Hawkins.jpg",
+      "course": "Graphic Design Basic",
+      "category": "Design",
+      "price": 500
+    }
+    
+  ],
+  "consultation": [
+      
+  ]
+}

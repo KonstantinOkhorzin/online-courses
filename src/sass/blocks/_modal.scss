@@ -27,8 +27,11 @@
     }
     &__close {
         position: absolute;
-        top: 25px;
-        right: 25px;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        background: url(../../icons/close.svg);
         transition: transform .3s ease-out 0s;
         &:hover {
             transform: rotate(90deg);
@@ -145,6 +148,12 @@
                 transition: all .3s;
             }
         }
+    }
+    &__spinner {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }
