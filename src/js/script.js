@@ -356,35 +356,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  new CardCourses(
-    "img/card__speakers/Jerome-Bell.jpg",
-    "Marketing",
-    "The Ultimate Google Ads Training Course",
-    100,
-    "Jerome Bell",
-    ".main-page-courses__list",
-    'card-courses'
-  ).render();
+  const getResourse = async (url) => {
+    const result = await fetch(url);
 
-  new CardCourses(
-    "img/card__speakers/Marvin-McKinney.jpg",
-    "Management",
-    "Prduct Management Fundamentals",
-    480,
-    "Marvin McKinney",
-    ".main-page-courses__list",
-    'card-courses'
-  ).render();
+    if (!result.ok) {
+      throw new Error(`Could not fetch ${url}, status: ${result.status}`);
+    }
 
-  new CardCourses(
-    "img/card__speakers/Leslie-Alexander.jpg",
-    "HR & Recruting",
-    "HR Management and Analytics",
-    200,
-    "Leslie Alexander Li",
-    ".main-page-courses__list",
-    'card-courses'
-  ).render();
+    return await result.json();
+  };
+
+  getResourse('http://localhost:3000/courses')
+    .then(data => {
+      data.forEach(({speaker, avatar, course, category, price}) => {
+        new CardCourses(avatar, category, course, price, speaker, '.main-page-courses__list', 'card-courses').render();
+      });
+    });
 
   // Form---------------------------------------------------------------------------------------------
     const formConsultation = document.querySelector('#form-consultation');
@@ -405,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (!result.ok) {
-        throw new Error(`Could not fetch ${url}, status: ${result.staus}`);
+        throw new Error(`Could not fetch ${url}, status: ${result.status}`);
       }
 
       return await result.json();
