@@ -1,8 +1,4 @@
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/fonts';
-@import 'base/animation';
+@import "base/*.scss";
 
 * {
     font-family: 'Lato', sans-serif;
@@ -13,68 +9,7 @@ body._lock {
     overflow: hidden;
 }
 
-@import 'blocks/container';
-@import 'blocks/header';
-@import 'blocks/navbar';
-@import 'blocks/title';
-@import 'blocks/subtitle';
-@import 'blocks/btns';
-@import 'blocks/play-video';
-@import 'blocks/bulleted-line';
-@import 'blocks/heading.scss';
-@import 'blocks/events';
-@import 'blocks/card-courses';
-@import 'blocks/card-teams';
-@import 'blocks/card-events';
-@import 'blocks/card-blog';
-@import 'blocks/certificate';
-@import 'blocks/carousel-reviows';
-@import 'blocks/carousel__btns';
-@import 'blocks/blog';
-@import 'blocks/subscribe';
-@import 'blocks/footer';
-@import 'blocks/search-form';
-@import 'blocks/action-link';
-@import 'blocks/pagination';
-@import 'blocks/modal';
-@import 'blocks/courses';
-@import 'blocks/contacts';
-@import 'blocks/checkbox';
-@import 'blocks/intro';
-@import 'blocks/values';
-@import 'blocks/directions';
-@import 'blocks/process';
-@import 'blocks/team';
-@import 'blocks/companies';
-@import 'blocks/subscribe-check';
-@import 'blocks/header-elem';
-@import 'blocks/sidebar';
-@import 'blocks/speaker';
-@import 'blocks/step';
-@import 'blocks/promotion';
-@import 'blocks/whom';
-@import 'blocks/program';
-@import 'blocks/accordion';
-@import 'blocks/register';
-@import 'blocks/main-page';
-@import 'blocks/main-page-header';
-@import 'blocks/main-page-about';
-@import 'blocks/main-page-courses';
-@import 'blocks/benefits';
-@import 'blocks/courses-page';
-@import 'blocks/events-page';
-@import 'blocks/blog-page.scss';
-@import 'blocks/about-page';
-@import 'blocks/about-page-statistics';
-@import 'blocks/course-page';
-@import 'blocks/course-page-about';
-@import 'blocks/event-page';
-@import 'blocks/event-page-about';
-@import 'blocks/event-page-subscribe';
-@import 'blocks/post-page';
-@import 'blocks/slider';
-@import 'blocks/post';
-@import 'blocks/subscribe-form';
+@import "blocks/*.scss";
 
 
 

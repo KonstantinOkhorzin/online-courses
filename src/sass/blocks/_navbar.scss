@@ -91,22 +91,26 @@
     &__register {
         font-weight: 700;
         @include main-text;
+        &:hover {
+            color: $red-color;
+            transition: all .3s;
+        }
     }
     &__log-in {
-        position: relative;
         width: 71px;
-        padding-left: 28px;
         font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @include main-text;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            display: block;
-            width: 20px;
-            height: 20px;
-            background: url('../icons/profile.svg');
+        &:hover {
+            color: $red-color;
+            transition: all .3s;
+            svg path {
+                fill: $red-color;
+                transition: all .3s;
+            }
+            
         }
         @media (max-width: 1260px) {
             width: 60px;
