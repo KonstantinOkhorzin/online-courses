@@ -1,12 +1,7 @@
 @import "base/*.scss";
-
+@import "libs/*.scss";
 * {
     font-family: 'Lato', sans-serif;
-}
-
-//убераеться возможность скрола при открытом меню burger
-body._lock {
-    overflow: hidden;
 }
 
 @import "blocks/*.scss";

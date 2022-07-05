@@ -1,8 +1,5 @@
-"use strict";
+function timer() {
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    //Тimer
     const deadline = '2022-06-30';
     //Функция для получения разницы между датами
     function getTimeRemaining(endtime) {
@@ -65,4 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     setClock('.promotion__timer', deadline);
-});
+}
+
+export default timer;

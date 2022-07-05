@@ -1,56 +1,23 @@
 .slider {
     &__controls {
-        display: grid;
-        grid-template-columns: repeat(2, 48px);
-        grid-template-rows: 48px;
-    }
-    &__prev-btn,
-    &__next-btn {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        transition: all .3s;
-        &:hover {
-            background-color: $red-color;
-            svg path {
-                fill: #fff;
-            }
-        }
     }
-    &__list_team {
+
+    &__swiper-team,
+    &__swiper-blog,
+    &__swiper-courses,
+    &__swiper-events {
         margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(4, 285px);
-        grid-template-rows: minmax(416px, auto);
-        column-gap: 30px;
+        max-width: 1230px;
     }
-    &__list_blog {
-        margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(3, 390px);
-        grid-template-rows: 507px;
-        column-gap: 30px;
-    }
-    &__list_courses {
-        margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(2, 600px);
-        column-gap: 30px;
-    }
-    &__list_events {
-        margin-top: 62px;
-        display: grid;
-        grid-template-columns: repeat(3, 390px);
-        grid-template-rows: minmax(323px, auto);
-        column-gap: 30px;
-    }
+
     &__link {
         margin-top: 82px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     &__question {
         font-weight: 700;
         font-size: 28px;
@@ -59,4 +26,7 @@
         margin-right: 40px;
     }
 }
+
+
+
 

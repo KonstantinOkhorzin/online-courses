@@ -1,0 +1,30 @@
+.slider-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all .3s;
+    &:hover {
+        background-color: $red-color;
+        svg path {
+            fill: #fff;
+        }
+    }
+}
+
+.slider-btn.swiper-button-disabled {
+    svg path {
+        fill: #bfc1c9;
+        }
+    &:hover{
+        background-color: inherit;
+        svg path {
+        fill: #bfc1c9;
+        }
+    }
+}
+
+ 
+

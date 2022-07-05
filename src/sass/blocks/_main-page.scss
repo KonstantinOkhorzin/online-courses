@@ -1,5 +1,4 @@
 .main-page {
-    &__carousel-reviews,
     &__subscribe {
         margin-top: 180px;
     }
@@ -12,9 +11,12 @@
         padding: 80px 0;
         background: url('../img/main-events__bg.png') center center / cover no-repeat;
     }
-    &__carousel-block {
+    &__sliders-block {
         padding: 164px 0 100px;
         background: url(../img/main-page-carousel-block__bg.png) center center / cover no-repeat;
+    }
+    &__slider {
+        margin-bottom: 180px;
     }
     &__play-video {
         margin: 12px 0 0 -16px;
