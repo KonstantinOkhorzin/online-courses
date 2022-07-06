@@ -1,4 +1,4 @@
-import { closeModal } from "./modals.js";
+
 import { postData } from "../services/services.js";
 
 function forms() {

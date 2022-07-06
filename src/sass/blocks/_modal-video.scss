@@ -1,0 +1,36 @@
+.modal-video {
+    width: 80%;
+    height: 80%;
+    display: none;
+    &_active {
+        display: block;
+    }
+    &__overlay {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background: rgba(#1E212C, 0.75);
+        &_active {
+            display: flex;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 30px;
+        height: 30px;
+        background: url(../../icons/close_red.svg);
+        transition: transform .3s ease-out 0s;
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+}

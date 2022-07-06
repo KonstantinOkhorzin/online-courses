@@ -1,19 +1,15 @@
 import * as functions from "./modules/functions.js";
 import navbar from "./modules/navbar.js";
 import accordion from "./modules/accordion.js";
-import { sliderReviews, sliderTeam, sliderCourses, sliderEvents, sliderBlogs} from "./modules/sliders.js";
+import "./modules/sliders.js";
 import tabs from "./modules/tabs.js";
-
-
 import modals from "./modules/modals.js";
-import { openModal } from "./modules/modals.js";
-import forms from "./modules/forms.js";
-import timer from "./modules/timer.js";
-// import { CardCourses } from "./modules/cards.js";
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const modalTimerId = setTimeout(() => openModal('.overlay', '#consultation', modalTimerId), 500000);
+    
 
     functions.isWebp();
     functions.removeHover();
@@ -25,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         tabs('.benefits__tab', '.benefits__tab-content', 'benefits__tab_active', 'benefits__tab-content_active');
     } catch(e) {}
 
+    modals('.modal__overlay', '#consultation', '.navbar__btn', 'modal__close', 'modal__overlay_active', 'modal_active');
+    modals('.modal__overlay', '#sing-up', '.navbar__register', 'modal__close', 'modal__overlay_active', 'modal_active');
+    modals('.modal__overlay', '#sing-in', '.navbar__log-in', 'modal__close', 'modal__overlay_active', 'modal_active');
+    modals('.modal-video__overlay', '.modal-video', '.play-video', 'modal-video__close', 'modal-video__overlay_active', 'modal-video_active');
 
-    // modals('.overlay', '[data-modal-consultation]', '#consultation', modalTimerId);
-    // forms();
-    // timer();
 
 });
