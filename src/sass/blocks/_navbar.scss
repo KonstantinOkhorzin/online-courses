@@ -90,7 +90,8 @@
     }
     &__register {
         font-weight: 700;
-        @include main-text;
+        line-height: 160%;
+        color: #424551;
         &:hover {
             color: $red-color;
             transition: all .3s;
@@ -102,7 +103,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include main-text;
+        line-height: 160%;
+        color: #424551;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
         &:hover {
             color: $red-color;
             transition: all .3s;
@@ -114,12 +120,12 @@
         }
         @media (max-width: 1260px) {
             width: 60px;
-            padding-left: 23px;
         }
         @media (max-width: 768px) {
             width: auto;
-            &:before {
-                top: 8px;
+            svg {
+                width: 25px;
+                height: 25px;
             }
         }
     }

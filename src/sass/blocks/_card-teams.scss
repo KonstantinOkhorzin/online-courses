@@ -6,9 +6,28 @@
         background-color: #FFCF2D;;
         border-radius: 4px;
         padding: 20px 20px 0 20px;
+        @media (max-width: 1260px) {
+            height: 252px;
+        }
+        @media (max-width: 992px) {
+            height: 258px;
+        }
+        @media (max-width: 768px) {
+            height: 300px;
+        }
+        @media (max-width: 576px) {
+            height: 100%;
+            padding: 10px 10px 0 10px;
+            display: flex;
+            justify-content: center;
+        }
     }
     &__img {
         @include img_cover;
+        @media (max-width: 576px) {
+            height: 205px;
+            width: 157px;
+        }
     }
     &__hover {
         position: absolute;
@@ -53,11 +72,23 @@
         line-height: 150%;
         text-align: center;
         color: #424551;
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
     }
     &__position {
         margin-top: 4px;
         line-height: 160%;
         text-align: center;
         color: #787A80;
+        @media (max-width: 678px) {
+            font-size: 15px;
+        }
+        @media (max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }

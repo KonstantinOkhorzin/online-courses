@@ -57,10 +57,13 @@
     &__list {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(3, 390px);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 507px;
         grid-auto-rows: 507px;
         gap: 60px 30px;
+        @media (max-width: 1260px) {
+            gap: 60px 15px;
+        }
     }
     &__pagination {
         margin-top: 80px;

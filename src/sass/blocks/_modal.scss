@@ -9,7 +9,13 @@
     border: 1px solid #E5E8ED;
     box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     border-radius: 4px;
-    padding: 48px 0 48px;
+    padding: 48px 0;
+    @media (max-width: 1550px) {
+        padding: 20px 0; 
+    }
+    @media (max-width: 576px) {
+        width: 90%; 
+    }
     &_active {
         display: block;
     }
@@ -52,11 +58,20 @@
         line-height: 150%;
         text-align: center;
         color: #787A80;
+        @media (max-width: 1550px) {
+            margin-top: 0; 
+        }
+        @media (max-width: 576px) {
+            padding: 0 15px;
+        }
     }
     &__form {
         margin-top: 19px;
         padding: 0 48px 29px;
         border-bottom: 1px solid #E5E8ED;
+        @media (max-width: 576px) {
+            padding: 0 20px 20px;
+        }
     }
     &__form-item {
         position: relative;
@@ -64,6 +79,9 @@
         margin-top: 20px;
         &:first-child {
             margin-top: 0;
+        }
+        @media (max-width: 1550px) {
+            margin-top: 10px; 
         }
     }
     &__label {
@@ -122,12 +140,18 @@
     &__btn {
         width: 100%;
         margin-top: 24px;
+        @media (max-width: 678px) {
+            margin-top: 10px; 
+        }
     }
     &__question {
         margin-top: 24px;
         font-size: 14px;
         line-height: 150%;
         color: #424551;
+        @media (max-width: 678px) {
+            margin-top: 10px; 
+        }
     }
     &__link {
         color: $red-color;

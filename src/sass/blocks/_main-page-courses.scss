@@ -1,11 +1,26 @@
 .main-page-courses {
     margin-top: 182px;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
     &__list {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(2, minmax(auto, 600px));
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: minmax(214px, auto);
         grid-auto-rows: minmax(214px, auto);
         gap: 30px;
+        @media (max-width: 992px) {
+            grid-template-rows: minmax(150px, auto);
+            grid-auto-rows: minmax(150px, auto);
+        }
+        @media (max-width: 768px) {
+            grid-template-rows: minmax(100px, auto);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 15px;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
     }
 }

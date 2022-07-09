@@ -4,6 +4,9 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        @media (max-width: 576px) {
+            bottom: -50px;
+        }
     }
     &__controls {
         position: absolute;

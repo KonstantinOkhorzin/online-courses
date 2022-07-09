@@ -35,15 +35,15 @@ export const sliderTeam = new Swiper('.slider__swiper-team', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    425: {
+    426: {
       slidesPerView: 2,
       loopedSlides: 2
     },
-    768: {
+    769: {
       slidesPerView: 3,
       loopedSlides: 3
     },
-    992: {
+    993: {
       slidesPerView: 4,
       loopedSlides: 4
     },
@@ -69,7 +69,7 @@ export const sliderCourses = new Swiper('.slider__swiper-courses', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    768: {
+    769: {
       slidesPerView: 2,
       loopedSlides: 2
     }
@@ -94,11 +94,11 @@ export const sliderEvents = new Swiper('.slider__swiper-events', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    425: {
+    426: {
       slidesPerView: 2,
       loopedSlides: 2
     },
-    992: {
+    993: {
       slidesPerView: 3,
       loopedSlides: 3
     },
@@ -123,11 +123,11 @@ export const sliderBlogs = new Swiper('.slider__swiper-blog', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    425: {
+    426: {
       slidesPerView: 2,
       loopedSlides: 2
     },
-    992: {
+    993: {
       slidesPerView: 3,
       loopedSlides: 3
     },

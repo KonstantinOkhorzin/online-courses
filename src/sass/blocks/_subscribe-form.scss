@@ -1,13 +1,29 @@
 .subscribe-form {
     display: grid;
     grid-template-columns: 422px 154px;
-    grid-template-rows: 52px 26px;
+    grid-template-rows: 52px;
     grid-auto-rows: 26px;
     gap: 24px;
+    @media (max-width: 768px) {
+        align-items: center;
+        grid-template-columns: 400px 140px;
+        grid-template-rows: 48px;
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 300px 100px;
+        grid-template-rows: 40px;
+        gap: 10px;
+    }
+    @media (max-width: 425px) {
+        grid-template-columns: 200px 80px;
+    }
     &__input {
         @include input-base;
         line-height: 160%;
         padding: 13px 16px;
+        @media (max-width: 576px) {
+            padding: 7px 16px;
+        }
     }
     &__checkbox {
         grid-column: 1/3;

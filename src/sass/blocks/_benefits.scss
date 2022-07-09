@@ -1,23 +1,45 @@
 .benefits {
     margin-top: 180px;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
     &__tabs {
         margin: 60px auto 0;
-        width: 1228px;
-        height: 46px;
+        width: 100%;
         display: flex;
+        @media (max-width: 768px) {
+            margin: 30px auto 0;
+        }
     }
     &__tab {
         width: 25%;
+        min-height: 46px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #9A9CA5;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: start;
+        }
         &-icon {
             margin-right: 8px;
+            @media (max-width: 992px) {
+                margin-right: 5px;
+            }
         }
         &-service {
             font-weight: 700;
             line-height: 160%;
+            @media (max-width: 992px) {
+                font-size: 15px;
+            }
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+            @media (max-width: 425px) {
+                font-size: 11px;
+            }
         }
         &_active {
             border: 1px solid $red-color;
@@ -31,30 +53,69 @@
     &__tab-content {
         margin-top: 60px;
         display: none;
+        grid-template-columns: 495px 600px;
+        justify-content: space-between;
+        @media (max-width: 1260px) {
+            grid-template-columns: 440px 500px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 320px 400px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            row-gap: 15px;
+        }
         &_active {
             display: grid;
-            grid-template-columns: 495px 600px;
-            justify-content: space-between;
             @include fade;
         }
     }
     &__tab-wrapper-img {
         width: 100%;
         height: 440px;
+        @media (max-width: 1260px) {
+            height: 360px;
+        }
+        @media (max-width: 992px) {
+            height: 290px;
+        }
+        @media (max-width: 768px) {
+            order: -1;
+            height: 360px;
+        }
+        @media (max-width: 576px) {
+            height: 330px;
+        }
+        @media (max-width: 425px) {
+            height: 280px;
+        }
     }
     &__tab-img {
         @include img_cover;
     }
+    &__tab-descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     &__tab-title {
-        margin-top: 122px;
         font-weight: 900;
         font-size: 32px;
         line-height: 130%;
         color: #1E212C;
+        @media (max-width: 992px) {
+            font-size: 27px;
+        }
+        @media (max-width: 425px) {
+            font-size: 25px;
+        }
     }
     &__tab-text {
         margin-top: 24px;
         @include main-text;
+        @media (max-width: 992px) {
+            margin-top: 10px;
+        }
     }
         
 

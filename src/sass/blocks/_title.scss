@@ -6,4 +6,16 @@
     &_center {
         text-align: center;
     }
+    @media (max-width: 992px) {
+        font-size: 41px;
+    }
+    @media (max-width: 768px) {
+        font-size: 37px;
+    }
+    @media (max-width: 576px) {
+        font-size: 35px;
+    }
+    @media (max-width: 425px) {
+        font-size: 28px;
+    }
 }

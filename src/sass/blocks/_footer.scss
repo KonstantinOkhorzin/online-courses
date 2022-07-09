@@ -193,7 +193,6 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        padding: 15px 0 19px;
         @media (max-width: 425px) {
             flex-direction: column;
         }
@@ -204,6 +203,7 @@
         color: #FFFFFF;
         display: flex;
         align-items: center;
+        padding: 15px 0px 19px;
     }
     &__heart {
         margin: 0 5px;
@@ -214,12 +214,10 @@
         line-height: 150%;
         color: #FFFFFF;
         opacity: 0.6;
+        padding: 15px 0px 19px;
         &:hover {
             opacity: 1;
             transition: all .3s;
-        }
-        @media (max-width: 425px) {
-            margin-top: 20px;
         }
     }
 }
