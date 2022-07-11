@@ -1,11 +1,20 @@
 .subscribe-check {
     background: #F4F5F7;
-    height: 454px;
     &__container {
         position: relative;
         display: grid;
         grid-template-columns: 470px 600px;
+        grid-template-rows: 454px;
         justify-content: space-between;
+        @media (max-width: 1260px) {
+            grid-template-columns: 400px 540px;
+            grid-template-rows: 355px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+            justify-items: center;
+        }
     }
     &__wrapper-img {
         position: absolute;
@@ -13,12 +22,29 @@
         left: -37px;
         width: 507px;
         height: 454px;
+        @media (max-width: 1260px) {
+            position: static;
+            width: 400px;
+            height: 355px;
+        }
+        @media (max-width: 425px) {
+            width: 290px;
+            height: 255px;
+        }
     }
     &__img {
         @include img_cover;
     }
     &__content {
         padding: 100px 0 120px;
+        grid-column: 2/3;
+        @media (max-width: 1260px) {
+            padding: 60px 0 0;
+        }
+        @media (max-width: 992px) {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
     }
     &__form {
         margin-top: 48px;
@@ -30,5 +56,11 @@
         display: flex;
         align-items: center;
         color: #1E212C;
+        @media (max-width: 576px) {
+            font-size: 23px;
+        }
+        @media (max-width: 425px) {
+            font-size: 21px;
+        }
     }
 }

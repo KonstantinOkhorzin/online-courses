@@ -8,6 +8,7 @@
         }
         @media (max-width: 992px) {
             grid-template-columns: 1fr;
+            gap: 30px;
         }
     }
     &__info {
@@ -34,7 +35,7 @@
             grid-template-columns: repeat(3, 105px);
             grid-template-rows: 50px;
             column-gap: 40px;
-            margin-top: 20px;
+            margin: 20px 0 30px;
         }
         @media (max-width: 425px) {
             grid-template-columns: repeat(3, 1fr);
@@ -57,7 +58,6 @@
         }
         @media (max-width: 992px) {
             order: -1;
-            margin-bottom: 15px;
             height: 512px;
         }
         @media (max-width: 768px) {

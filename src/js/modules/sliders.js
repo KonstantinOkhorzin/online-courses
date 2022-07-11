@@ -123,7 +123,7 @@ export const sliderBlogs = new Swiper('.slider__swiper-blog', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    426: {
+    577: {
       slidesPerView: 2,
       loopedSlides: 2
     },

@@ -4,5 +4,8 @@
     }
     &__slider {
         margin: 120px 0 180px;
+        @media (max-width: 768px) {
+            margin: 100px 0;
+        }
     }
 }

@@ -6,10 +6,10 @@ function tabs(tabSelector, contentSelector, activClassTabSelector, activeClassCo
   function hideTabContent() {
     tabsContent.forEach(item => {
       item.classList.remove(activeClassContentSelector);
-  });
+    });
 
-  tabs.forEach(item => {
-    item.classList.remove(activClassTabSelector);
+    tabs.forEach(item => {
+      item.classList.remove(activClassTabSelector);
     });
   }
 
