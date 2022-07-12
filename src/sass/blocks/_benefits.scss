@@ -84,10 +84,13 @@
             height: 360px;
         }
         @media (max-width: 576px) {
-            height: 330px;
+            width: 396px;
+            height: 288px;
+            justify-self: center;
         }
         @media (max-width: 425px) {
-            height: 280px;
+            width: 290px;
+            height: 211px;
         }
     }
     &__tab-img {

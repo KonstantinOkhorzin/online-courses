@@ -64,10 +64,12 @@
             height: 384px;
         }
         @media (max-width: 576px) {
-            height: 300px;
+            width: 396px;
+            height: 281px;
         }
         @media (max-width: 425px) {
-            height: 230px;
+            width: 290px;
+            height: 205px;
         }
     }
     &__img {

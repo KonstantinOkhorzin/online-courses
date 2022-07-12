@@ -4,6 +4,9 @@
     font-weight: 700;
     line-height: 160%;
     color: #1E212C;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
     &:hover {
         color: $red-color;
         transition: all .3s;

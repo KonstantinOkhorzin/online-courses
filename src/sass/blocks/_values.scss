@@ -2,8 +2,20 @@
     &__list {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 240px);
-        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 90px;
+        @media (max-width: 1260px) {
+            gap: 31px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 61px 31px;
+        }
+        @media (max-width: 425px) {
+            grid-template-columns: 1fr;
+            margin-top: 30px;
+            gap: 30px;
+        }
     }
     &__item {
         position: relative;
@@ -11,6 +23,31 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        @media (max-width: 992px) {
+            &:nth-child(2)::after {
+                display: none;
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                &::before {
+                    position: absolute;
+                    top: -104px;
+                    left: 168px;
+                    content: '';
+                    display: block;
+                    height: 100%;
+                    width: 1px;
+                    transform: rotate(90deg);
+                    background: url(../icons/divider__bg.svg) center center / cover no-repeat;
+                    @media (max-width: 768px) {
+                        left: 120px;
+                    }
+                    @media (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+        }
         &::after {
             position: absolute;
             top: 0;
@@ -19,7 +56,14 @@
             display: block;
             height: 162px;
             width: 1px;
-            background: url(../icons/divider__bg.svg);
+            background: url(../icons/divider__bg.svg) center center / cover no-repeat;
+            @media (max-width: 1260px) {
+                right: -15px;
+                height: 100%;
+            }
+            @media (max-width: 425px) {
+                display: none;
+            }
         }
         &:last-child::after{
             display: none;
@@ -38,10 +82,27 @@
         font-size: 20px;
         line-height: 150%;
         color: #1E212C;
+        @media (max-width: 1260px) {
+            font-size: 18px;
+        }
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+        @media (max-width: 425px) {
+            margin-top: 10px;
+        }
     }
     &__text {
         margin-top: 8px;
         line-height: 160%;
         color: #787A80;
+        @media (max-width: 1260px) {
+            font-size: 14px;
+            line-height: 150%;
+        }
+        @media (max-width: 576px) {
+            font-size: 12px;
+            line-height: 130%;
+        }
     }
 }
