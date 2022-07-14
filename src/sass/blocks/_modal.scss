@@ -30,6 +30,8 @@
         z-index: 10;
         &_active {
             display: block;
+            animation-name: fade;
+            animation-duration: .5s;
         }
     }
     &__close {

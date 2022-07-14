@@ -1,14 +1,14 @@
-export default function() {
-    const filterBtns = document.querySelectorAll('.blog__tab');
+export default function filter(btnSelector, activeClass) {
+    const filterBtns = document.querySelectorAll(btnSelector);
 
     function removeActiveClass() {
         filterBtns.forEach(btn => {
-          btn.classList.remove('blog__tab_active');
+          btn.classList.remove(activeClass);
         });
     }
 
     function addActiveClass(i = 0) {
-        filterBtns[i].classList.add('blog__tab_active');
+        filterBtns[i].classList.add(activeClass);
     }
 
     filterBtns.forEach((btn, i) => {

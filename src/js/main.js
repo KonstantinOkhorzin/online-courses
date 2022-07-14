@@ -6,7 +6,8 @@ import tabs from "./modules/tabs.js";
 import modals from "./modules/modals.js";
 import phonemask from "./modules/phonemask.js";
 import search from "./modules/search.js";
-import blog from "./modules/blog.js";
+import filter from "./modules/filter.js";
+import events from "./modules/events.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,11 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch(e) {}
 
     try {
+        events();
+    }catch(e) {}
+
+    try {
         search();
     }catch(e) {}
 
     try {
-        blog();
+        filter('.blog__tab', 'blog__tab_active');
+    }catch(e) {}
+
+    try {
+        filter('.courses__tab', 'courses__tab_active');
     }catch(e) {}
 
     try {

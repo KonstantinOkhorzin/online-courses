@@ -13,6 +13,9 @@
     }
     &__info {
         padding-top: 83px;
+        @media (max-width: 1260px) {
+            padding-top: 0;
+        }
     }
     &__text {
         margin-top: 48px;
@@ -36,6 +39,9 @@
             grid-template-rows: 50px;
             column-gap: 40px;
             margin: 20px 0 30px;
+        }
+        @media (max-width: 576px) {
+            column-gap: 30px;
         }
         @media (max-width: 425px) {
             grid-template-columns: repeat(3, 1fr);

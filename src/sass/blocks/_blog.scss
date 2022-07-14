@@ -48,6 +48,7 @@
             border: 1px solid $red-color;
             border-radius: 4px;
             color: $red-color;
+            @include fade;
             svg path {
                 fill: $red-color;
             }
