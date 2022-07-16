@@ -10,5 +10,8 @@
         margin: 12px auto 0;
         width: 1020px;
         text-align: center;
+        @media (max-width: 1260px) {
+            width: 100%;
+        }
     }
 }

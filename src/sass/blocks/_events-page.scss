@@ -5,5 +5,8 @@
     }
     &__subscribe {
         margin-top: 180px;
+        @media (max-width: 768px) {
+            margin-top: 100px;
+        }
     } 
 }

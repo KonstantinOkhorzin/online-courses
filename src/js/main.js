@@ -8,6 +8,7 @@ import phonemask from "./modules/phonemask.js";
 import search from "./modules/search.js";
 import filter from "./modules/filter.js";
 import events from "./modules/events.js";
+import event from "./modules/event.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
         events();
+    }catch(e) {}
+
+    try {
+        event();
     }catch(e) {}
 
     try {

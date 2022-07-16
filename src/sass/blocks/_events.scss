@@ -5,12 +5,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1260px) {
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+            gap: 20px 30px;
+        }
+    }
+    &__toolbar-item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        @media (max-width: 768px) {
+            gap: 8px;
+        }
     }
     &__toolbar-label {
         font-weight: 700;
         line-height: 160%;
         color: #424551;
-        margin-right: 12px;
     }
     &__select-category,
     &__select-sort,
@@ -19,7 +32,7 @@
         font-size: 14px;
         line-height: 150%;
         color: #424551;
-        padding: 11px 16px 12px;
+        padding: 11px 13px 12px;
         background: #FFFFFF;
         border: 1px solid #D7DADD;
         border-radius: 4px;
@@ -27,10 +40,15 @@
     &__select-category,
     &__select-sort {
         width: 160px;
+        @media (max-width: 768px) {
+            width: 140px;
+        }
     }
     &__input-number {
         width: 72px;
-        margin-right: 12px;
+        @media (max-width: 768px) {
+            width: 45px;
+        }
     }
     &__toolbar-text {
         font-size: 14px;
@@ -39,6 +57,12 @@
     }
     &__search {
         width: 282px;
+        @media (max-width: 768px) {
+            width: 230px;
+        }
+        @media (max-width: 425px) {
+            width: 100%;
+        }
     }
     &__toolbar-icons {
         width: 52px;
@@ -63,6 +87,7 @@
         @media (max-width: 1260px) {
             grid-template-rows: minmax(95px, auto);
             grid-auto-rows: minmax(95px, auto);
+            margin-top: 40px;
         }
         @media (max-width: 768px) {
             row-gap: 10px;
@@ -72,6 +97,18 @@
             grid-template-rows: minmax(323px, auto);
             grid-auto-rows: minmax(323px, auto);
             gap: 30px;
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 768px) {
+                gap: 20px;
+            }
+            @media (max-width: 576px) {
+                gap: 10px;
+            }
+            @media (max-width: 425px) {
+                grid-template-columns: 1fr;
+            }
         }
     } 
     &__link {

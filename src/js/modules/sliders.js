@@ -84,7 +84,7 @@ export const sliderEvents = new Swiper('.slider__swiper-events', {
   },
   grabCursor: true,
   slidesPerView: 1, //Количество слайдов для показа
-  spaceBetween: 30, //Отступ между слайдами
+  spaceBetween: 10, //Отступ между слайдами
   slidesPerGroup: 1, //Количество пролистываемых слайдов
   loop: true, //Бесконечный слайдер
   loopedSlides: 1, //Обязательно для бесконечности кол. должно быть такое как в slidesPerView
@@ -96,11 +96,13 @@ export const sliderEvents = new Swiper('.slider__swiper-events', {
     },
     426: {
       slidesPerView: 2,
-      loopedSlides: 2
+      loopedSlides: 2,
+      spaceBetween: 20
     },
     993: {
       slidesPerView: 3,
-      loopedSlides: 3
+      loopedSlides: 3,
+      spaceBetween: 30
     },
   }
 });
