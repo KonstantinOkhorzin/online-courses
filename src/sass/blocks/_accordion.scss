@@ -3,6 +3,9 @@
     grid-template-rows: minmax(30px, auto);
     grid-auto-rows: minmax(30px, auto);
     row-gap: 24px;
+    @media (max-width: 425px) {
+        row-gap: 15px; 
+    }
     &__title {
         position: relative;
         text-align: start;
@@ -11,6 +14,12 @@
         line-height: 150%;
         color: #1E212C;
         padding-left: 40px;
+        @media (max-width: 992px) {
+            font-size: 18px;
+        }
+        @media (max-width: 425px) {
+            font-size: 16px;
+        }
         &:before,
         &:after {
             content: '';
@@ -38,5 +47,8 @@
         @include main-text;
         padding-left: 40px;
         margin-top: 16px;
+        @media (max-width: 425px) {
+            margin-top: 8px;
+        }
     }
 }

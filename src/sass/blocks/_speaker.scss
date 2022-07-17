@@ -3,12 +3,28 @@
         display: grid;
         grid-template-columns: 495px 600px;
         justify-content: space-between;
+        @media (max-width: 1260px) {
+            grid-template-columns: 400px 500px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 300px 400px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
     &__avatar {
         position: relative;
         background-color: #FFCF2D;
         border-radius: 4px;
         height: 580px;
+        @media (max-width: 1260px) {
+            height: 560px;
+        }
+        @media (max-width: 992px) {
+            height: 400px;
+        }
     }
     &__wrapper-img {
         position: absolute;
@@ -16,6 +32,19 @@
         left: 19px;
         width: 458px;
         height: 600px;
+        @media (max-width: 1260px) {
+            left: 20px;
+            width: 360px;
+            height: 580px;
+        }
+        @media (max-width: 992px) {
+            width: 260px;
+            height: 420px;
+        }
+        @media (max-width: 768px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__img {
         @include img_cover;
@@ -25,6 +54,13 @@
         font-size: 20px;
         line-height: 150%;
         color: #787A80;
+        @media (max-width: 992px) {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        @media (max-width: 425px) {
+            font-size: 15px;
+        }
     }
     &__statistics {
         margin-top: 32px;
@@ -60,6 +96,9 @@
     &__text {
         margin-top: 32px;
         @include main-text;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
     }
     &__logos {
         margin-top: 40px;
@@ -67,8 +106,17 @@
         grid-template-columns: repeat(3, 105px);
         grid-template-rows: 50px;
         column-gap: 40px;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 425px) {
+            grid-template-columns: repeat(3, 90px);
+            grid-template-rows: 42px;
+            column-gap: 10px;
+            justify-content: space-between;
+        }
     }
-    &__logo {
+    &__logo-img {
         width: 100%;
         height: 100%;
         @include img_cover;
@@ -76,6 +124,9 @@
     &__icons {
         margin-top: 40px;
         display: flex;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
     }
     &__icon {
         margin-right: 24px;
