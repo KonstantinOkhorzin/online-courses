@@ -42,6 +42,10 @@
         height: 24px;
         background: url(../../icons/close.svg);
         transition: transform .3s ease-out 0s;
+        @media (max-width: 425px) {
+            top: 12px;
+            right: 12px;
+        }
         &:hover {
             transform: rotate(90deg);
         }
