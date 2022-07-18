@@ -20,10 +20,11 @@
         border-radius: 4px;
         height: 580px;
         @media (max-width: 1260px) {
-            height: 560px;
+            height: 450px;
         }
         @media (max-width: 992px) {
-            height: 400px;
+            height: 320px;
+            align-self: center;
         }
     }
     &__wrapper-img {
@@ -35,11 +36,11 @@
         @media (max-width: 1260px) {
             left: 20px;
             width: 360px;
-            height: 580px;
+            height: 470px;
         }
         @media (max-width: 992px) {
             width: 260px;
-            height: 420px;
+            height: 340px;
         }
         @media (max-width: 768px) {
             left: 50%;
@@ -71,6 +72,9 @@
         font-weight: 700;
         line-height: 160%;
         color: #424551;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
     }
     &__statistics-item {
         position: relative;

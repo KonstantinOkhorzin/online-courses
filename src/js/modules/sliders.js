@@ -69,7 +69,7 @@ export const sliderCourses = new Swiper('.slider__swiper-courses', {
       slidesPerView: 1,
       loopedSlides: 1
     },
-    769: {
+    577: {
       slidesPerView: 2,
       loopedSlides: 2
     }

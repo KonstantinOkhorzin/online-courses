@@ -2,16 +2,28 @@
     &__block {
         padding: 86px 0 126px;
         background: url(../img/course-page__block.png) center center / cover no-repeat;
+        @media (max-width: 768px) {
+            padding: 86px 0 100px; 
+        }
     }
     &__small-block {
         margin-top: 122px;
         padding: 80px 0 100px;
         background: url(../img/course-page__small-block.png) center center / cover no-repeat;
+        @media (max-width: 768px) {
+            margin-top: 100px;
+        }
     }
     &__register {
         margin-top: 180px;
+        @media (max-width: 768px) {
+            margin-top: 100px;
+        }
     }
     &__slider {
         margin: 120px 0 180px;
+        @media (max-width: 768px) {
+            margin: 100px 0;
+        }
     }
 }

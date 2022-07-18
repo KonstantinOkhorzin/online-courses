@@ -1,16 +1,44 @@
 .step {
     margin-top: 180px;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
     &__list {
         margin-top: 90px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 30px;
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 55px 30px;
+        }
+        @media (max-width: 768px) {
+            margin-top: 60px;
+        }
+        @media (max-width: 576px) {
+            gap: 30px;
+        }
+        @media (max-width: 425px) {
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+        }
     }
     &__item {
         padding-top: 46px;
         position: relative;
         z-index: 1;
         border-top: 1px dashed #D7DADD;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+        }
+        @media (max-width: 425px) {
+            padding-top: 0;
+            border-left: 1px dashed #D7DADD;
+            border-top: none;
+            margin-left: 25px;
+            padding-left: 35px;
+        }
+
         &:last-child {
             border: none;
         }
@@ -28,11 +56,24 @@
         font-size: 20px;
         line-height: 150%;
         color: #1E212C;
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
+        @media (max-width: 425px) {
+            font-size: 16px;
+        }
     }
     &__item-text {
         margin-top: 8px;
         line-height: 160%;
         color: #787A80;
+        @media (max-width: 576px) {
+            font-size: 14px;
+            margin-top: 0;
+        }
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
     }
     &__number {
         position: absolute;
@@ -50,5 +91,18 @@
         color: #D7DADD;
         z-index: 5;
         background: white;
+        @media (max-width: 576px) {
+            font-size: 41px;
+            width: 70px;
+            height: 70px;
+            top: -36px;
+            left: -10px;
+        }
+        @media (max-width: 425px) {
+            top: -11px;
+            left: -25px;
+            width: 50px;
+            height: 50px;
+        }
     }
 }

@@ -6,6 +6,9 @@
     &_center {
         text-align: center;
     }
+    @media (max-width: 1230px) {
+        font-size: 41px;
+    }
     @media (max-width: 992px) {
         font-size: 39px;
     }

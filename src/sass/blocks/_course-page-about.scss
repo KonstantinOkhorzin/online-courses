@@ -1,13 +1,32 @@
 .course-page-about {
     padding: 120px 0 114px;
+    @media (max-width: 768px) {
+        padding: 100px 0;
+    }
     &__container {
         display: grid;
         grid-template-columns: 600px 495px;
         justify-content: space-between;
+        @media (max-width: 1260px) {
+            grid-template-columns: 500px 400px;
+        }
+        @media (max-width: 992px) {
+            grid-template-columns: 400px 300px;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
     &__descr {
         margin-top: 40px;
-        @include main-text;;
+        @include main-text;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 425px) {
+            margin-top: 10px;
+        }
     }
     &__list-title {
         margin-top: 48px;
@@ -15,6 +34,13 @@
         font-size: 28px;
         line-height: 150%;
         color: #1E212C;
+        @media (max-width: 992px) {
+            margin-top: 40px;
+        }
+        @media (max-width: 425px) {
+            margin-top: 30px;
+            font-size: 25px;
+        }
     }
     &__list {
         margin-top: 24px;
@@ -22,5 +48,11 @@
         grid-template-rows: minmax(26px, auto);
         grid-auto-rows: minmax(26px, auto);
         row-gap: 4px;
+        @media (max-width: 992px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 425px) {
+            margin-top: 10px;
+        }
     }
 }
