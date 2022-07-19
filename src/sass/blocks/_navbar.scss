@@ -26,14 +26,34 @@
             overflow: auto;
             flex-direction: column;
             gap: 50px;
+            &:before {
+                content: "";
+                position: fixed;
+                width: 40%;
+                top: 0;
+                left: -100%;
+                height: 60px;
+                background-color: rgba(250, 250, 250, 1);
+                z-index: 2;
+                transition: left 0.3s ease 0s;
+                @media (max-width: 768px) {
+                    width: 60%;
+                }
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
             @media (max-width: 768px) {
-                width: 80%;
+                width: 60%;
             }
             @media (max-width: 576px) {
                 width: 100%;
             }
             &_active {
                 left: 0;
+                &:before {
+                    left: 0;
+                }
             }
         }
     }
