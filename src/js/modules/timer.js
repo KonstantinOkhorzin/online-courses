@@ -1,6 +1,11 @@
 function timer() {
 
-    const deadline = '2022-06-30';
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    let day = now.getDate() + 5;
+
+    const deadline = new Date(`${year}, ${month}, ${day}`);
     //Функция для получения разницы между датами
     function getTimeRemaining(endtime) {
         let days, hours, min, sec;

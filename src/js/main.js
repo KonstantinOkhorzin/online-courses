@@ -9,6 +9,7 @@ import search from "./modules/search.js";
 import filter from "./modules/filter.js";
 import events from "./modules/events.js";
 import event from "./modules/event.js";
+import timer from "./modules/timer.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     functions.toTop();
     navbar();
     accordion();
+
+    try {
+        timer();
+    }catch(e) {}
 
     try {
         tabs('.benefits__tab', '.benefits__tab-content', 'benefits__tab_active', 'benefits__tab-content_active');
